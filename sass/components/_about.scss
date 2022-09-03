@@ -1,0 +1,36 @@
+.group-img{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:center;
+    
+    
+}
+.bottom-group{
+    align-items: flex-end;
+}
+.top-group{
+align-items: flex-start;
+}
+
+.side-image {
+    width: auto;
+    justify-content: space-around;
+
+}
+
+.group-img img{
+    margin: 5px;
+}
+.sun{
+    position: relative;
+}
+.description{
+    position: absolute;
+    width: 770px;
+    height: 400px;
+    background-color: #ffffff;
+padding: 10px;
+top:57%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
