@@ -1,0 +1,43 @@
+.directions{
+    display: flex;
+flex-wrap: wrap;
+    margin-left: -10px;
+    margin-top: -10px;
+margin-bottom: 50px;
+    
+
+}
+.direction-item{
+    flex-basis: calc(100% / 3 - 10px);
+        margin-left: 10px;
+        margin-top: 10px;
+}
+
+.container-directions{
+    position: absolute;
+    top: 215px;
+    margin: 50px 100px;
+    text-align: center;
+}
+.background-directions{
+   
+    
+    width: 100%;
+    height: 1200px;
+    background-color: #5ec8d1;
+    text-align: center;
+    margin: auto;
+}
+
+.direction-header{
+    display: inline-block;
+    margin: 20px;
+    
+}
+.direction-section{
+    position: relative;
+    padding-bottom: 500px;
+    
+}
+
+
