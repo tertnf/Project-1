@@ -1,7 +1,7 @@
 
 
 .hero-section {
-    background-color: #F5E9FB;
+    
  
     display: block;
     outline: 1px solid red;
@@ -20,7 +20,9 @@ width: 400px;
 }
 
 
-
+.hero-section .container  {
+    background-color: #F5E9FB;
+}
 
 
 .hero-header{
@@ -80,3 +82,40 @@ font-family: 'Montserrat',
 }
 
 h1 {margin-bottom: 44px;}
+
+.button{
+    width: 237px;
+    height: 70px; 
+    border-radius: 50px;   
+    border: 2px solid #3F0958;
+    color: #161616;
+    
+    margin-bottom: 141px;
+}
+.button-accent{
+    background-image: linear-gradient(to right, #B33EFB, #391FD9);
+border-color: transparent;
+color: #FFFFFF;
+
+}
+.hero-button :not(:last-child){
+margin-right: 27px;
+}
+.hero-text{
+    margin-bottom: 64px;
+}
+
+.social-links{
+    display: flex;
+}
+.social-links :not(:last-child){
+    margin-right: 15px;
+}
+
+.hero-wrap{
+    display: flex;
+}
+
+.hero-foto{
+    background-image: url(/images/hero-bg.png);
+}

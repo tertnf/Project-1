@@ -1,12 +1,20 @@
-.navigation{
+.header-wrap{
     display: flex;
+}
+.navigation {
+  display: flex;
+  margin-right: 3px;
 }
 
 header {display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 20px;
-background-color: #F5E9FB;
+
+
+}
+
+header .container{
+  background-color: #F5E9FB;
 }
 
 

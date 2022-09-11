@@ -15,11 +15,18 @@
 </head>
 
 <body>
-    <header class="container">
-        <a class="logo" href="">logo</a>
+    <header>
+        <div class="container header-wrap">
+        <a class="logo" href=""><svg width="57" height="46">
+            <use href=./images/svg/sprite.svg#logo></use>
+        </svg>logo</a>
         <ul class="contacts list">
-            <li><a href="tel:+380681825627">+380681825627</a></li>
-            <li><a href="mailto:ygai@gmail.com">ygai@gmail.com</a> </li>
+            <li><a href="tel:+380681825627"><svg width="20" height="20">
+                <use href=./images/svg/sprite.svg#phone></use>
+            </svg>+380681825627</a></li>
+            <li><a href="mailto:ygai@gmail.com"><svg width="20" height="20">
+                <use href=./images/svg/sprite.svg#mail></use>
+            </svg>ygai@gmail.com</a> </li>
         </ul>
         <nav>
             <ul class="navigation list">
@@ -31,29 +38,37 @@
                 <li>Контакти</li>
             </ul>
         </nav>
-    
+    </div>
     </header>
-<main class="container">
+<main>
+    
     <hero class="overlay hero-section">
-       
+       <div class="container hero-wrap">
+            <div class="hero-content">
          <h1><span class="hero-header-topic">Дитячий психолог</span>  <br><span class="hero-header-person">Наталія Угай</span> </h1>
-         <p>Записуйтесь на консультацію, щоб змінити життя прямо зараз</p>
+         <p class="hero-text">Записуйтесь на консультацію, щоб змінити життя прямо зараз</p>
          <ul class="hero-button list">
             <li>
-                <button class="button" type="button">Записатися</button>
+                <button class="button button-accent" type="button">Записатися</button>
             </li>
             <li><button class="button" type="button">Відгуки</button></li>
          </ul>
-         <ul class="list">
-            <li></li>
-            <li></li>
-            <li></li>
+         <ul class="social-links list">
+            <li><a href=""><svg  width="40" height="40">
+                <use href=./images/svg/sprite.svg#instagram></use>
+            </svg></a></li>
+            <li><a href=""><svg width="40" height="40">
+                <use href=./images/svg/sprite.svg#facebook></use>
+            </svg></a></li>
+            <li><a href=""><svg width="40" height="40">
+                <use href=./images/svg/sprite.svg#telegram></use>
+            </svg></a></li>
          </ul>
-        <div class="foto-frame">
-<img class = "hero-foto" src="./images/nu.jpg" alt="Наталія Угай">   
-       
         </div>
-        
+        <div class="foto-frame">
+<img class = "hero-foto" src="./images/nataliia-ugai.jpg" alt="Наталія Угай">   
+       </div>
+    </div>
 
     </hero>
 <section>
@@ -150,13 +165,16 @@
 <section>
     <h2>Мої клієнти та відгуки</h2>
 </section>
+</div>
 </main>
-<footer class="container">
+<footer class="page-footer">
+    <div class="container">
     <a href="">logo</a>
     <div class="subscribe">
         <ul>
             <li></li>
         </ul>
+    </div>
     </div>
 </footer>
 </body>
