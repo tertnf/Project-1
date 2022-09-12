@@ -114,6 +114,15 @@ header .container {
   margin-right: 10px;
 }
 
+.navigation-item {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #181717;
+}
+
 .hero-section {
   display: block;
   outline: 1px solid red;
@@ -162,24 +171,27 @@ section {
 }
 
 .hero-header-topic {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 700;
-  text-transform: uppercase;
-  color: #000000;
+  font-family: 'Montserrat';
   font-style: normal;
+  font-weight: 700;
   font-size: 64px;
   line-height: 78px;
   letter-spacing: 0.035em;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .hero-header-person {
-  font-family: 'Pattaya', sans-serif;
-  font-size: 400;
+  font-family: 'Pattaya';
   font-style: normal;
-  color: #AA5CE2;
+  font-weight: 400;
   font-size: 64px;
   line-height: 89px;
   letter-spacing: 0.035em;
+  background: linear-gradient(94.38deg, #B33EFB -3.82%, #391FD9 99.49%), #AA5CE2;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 h1 {
@@ -193,12 +205,26 @@ h1 {
   border: 2px solid #3F0958;
   color: #161616;
   margin-bottom: 141px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #161616;
 }
 
 .button-accent {
   background-image: -webkit-gradient(linear, left top, right top, from(#B33EFB), to(#391FD9));
   background-image: linear-gradient(to right, #B33EFB, #391FD9);
-  border-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  width: 239px;
+  height: 72px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
   color: #FFFFFF;
 }
 
@@ -208,6 +234,12 @@ h1 {
 
 .hero-text {
   margin-bottom: 64px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #141313;
 }
 
 .social-links {
@@ -227,7 +259,30 @@ h1 {
 }
 
 .hero-foto {
-  background-image: url(/images/hero-bg.png);
+  width: 784px;
+  height: 765px;
+}
+
+.logo {
+  margin-right: 81px;
+}
+
+.contacts-img {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.contacts-item {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #0A0909;
+}
+
+.header-wrap {
+  padding-top: 57px;
 }
 
 body {
