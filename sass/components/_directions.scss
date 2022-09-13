@@ -1,20 +1,26 @@
 .directions{
     position: relative;
+    
+            max-width: 381px;
+        
    
 }
 .container-directions{
     display: flex;
+    padding-bottom: 110px;
 }
 .container-directions :first-child{
     
    .direction-item::after  {
         content: "";
         position: absolute;
-        right: 30px;
-        width: 20px;
-        height: 20px;
-        background-color: green;
+        right: -67px;
+        width: 32px;
+        height: 32px;
+ top: 0;
         display: inline-block;
+        background-image: url(../../images/check.png);
+
         
 }
 }
@@ -24,20 +30,34 @@
     .direction-item::before {
         content: "";
         position: absolute;
-        left: 0px;
-        margin-left: -30px;
-        width: 20px;
-        height: 20px;
-        background-color: red;
+        // left: -38px;
+      
+        margin-left: -70px;
+        width: 32px;
+        height: 32px;
+        background-image: url(../../images/check.png);
         display: inline-block;
     }
 }
 
 .directions-picture{
-    width: 30%;
+    max-width: 575px;
     margin-right: 60px;
+    margin: -30px 135px 0px 135px;
+
 }
 .direction-item{
     margin-bottom: 40px;
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+    
+        color: #000000;
+position: relative;
+min-height: 56px;
 }
+
+
 

@@ -87,7 +87,8 @@ font-family: 'Montserrat';
             // text-fill-color: transparent;
 }
 
-h1 {margin-bottom: 44px;}
+h1 {margin-bottom: 44px;
+padding-top: 151px;}
 
 .button{
     width: 237px;
@@ -132,10 +133,14 @@ margin-right: 27px;
         line-height: 28px;
     
         color: #141313;
+        max-width: 507px;
 }
 
 .social-links{
     display: flex;
+    
+            margin-bottom: 50px;
+       
 }
 .social-links :not(:last-child){
     margin-right: 15px;
@@ -172,6 +177,4 @@ margin-right: 27px;
         color: #0A0909;
 }
 
-.header-wrap{
-    padding-top: 57px;
-}
+

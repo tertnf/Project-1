@@ -1,9 +1,14 @@
 .header-wrap{
     display: flex;
+   
+        padding-top: 57px;
+        padding-bottom: 16px;
+      
 }
 .navigation {
   display: flex;
   margin-right: 3px;
+
 }
 
 header {display: flex;
@@ -20,8 +25,8 @@ header .container{
 
 .navigation li{
         padding: 10px;
-    & :not(:last-child){
-      margin-right: 10px;  
+    &:not(:last-child){
+      margin-right: 20px;  
     }
 }
 .navigation-item{
@@ -32,3 +37,4 @@ font-size: 20px;
 line-height: 23px;
 
 color: #181717;}
+
