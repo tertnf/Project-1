@@ -331,7 +331,7 @@ body.modal-open {
   height: 32px;
   top: 0;
   display: inline-block;
-  background-image: url(../../images/check.png);
+  background-image: url(./../images/check.png);
 }
 
 .container-directions :last-child .direction-item::before {
@@ -340,7 +340,7 @@ body.modal-open {
   margin-left: -70px;
   width: 32px;
   height: 32px;
-  background-image: url(../../images/check.png);
+  background-image: url(./../images/check.png);
   display: inline-block;
 }
 
