@@ -39,6 +39,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 87px;
 }
 
 .counter {
@@ -51,9 +52,11 @@ img {
       -ms-flex-align: center;
           align-items: center;
   color: #AA5CE2;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
+}
+
+.counter-list-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .about-description {
@@ -70,15 +73,35 @@ img {
 }
 
 .about-img {
-  margin-bottom: 37px;
+  margin-bottom: 17px;
   max-width: 618px;
+  padding-top: 80px;
+  margin-right: 31px;
 }
 
 .about-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 87px;
+}
+
+.about-section .header {
+  text-align: center;
+}
+
+.about-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.about-text-indent {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .header-wrap {
@@ -381,5 +404,92 @@ body.modal-open {
   color: #B718EF;
   padding-top: 80px;
   margin-bottom: 55px;
+}
+
+.consultation-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.consultation-item {
+  margin-right: 40px;
+}
+
+.consultation-list {
+  margin-right: -40px;
+}
+
+.consultation-decor {
+  background-image: url("./../images/cons-decor.png");
+  height: 410px;
+  width: 497px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.decor-left {
+  top: 30px;
+  left: -155px;
+}
+
+.decor-right {
+  top: -80px;
+  right: -120px;
+}
+
+.consultation-format {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.consultation-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  display: inline-block;
+}
+
+.consultation-list :first-child .consultation-block:before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-image: url(./../images/location.png);
+  display: block;
+  margin-bottom: 21px;
+}
+
+.consultation-list :last-child .consultation-block:before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-image: url(./../images/web.png);
+  display: block;
+  margin-bottom: 21px;
+}
+
+.consultation-block {
+  position: absolute;
+  top: 272px;
+  margin-left: 50px;
+}
+
+.consultation-section .container {
+  padding-bottom: 117px;
 }
 /*# sourceMappingURL=main.css.map */
