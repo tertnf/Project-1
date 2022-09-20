@@ -1,0 +1,63 @@
+.apointment-button{
+    width: 260px;
+        height: 65px;
+        background: linear-gradient(94.38deg, #B33EFB -3.82%, #391FD9 99.49%);
+            border-radius: 50px;
+            border-style: hidden;
+            
+}
+.apointment-header{
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 78px;
+        /* identical to box height */
+    
+    
+        color: #FFFFFF;
+        text-align: center;
+}
+
+
+.apointment-bg{
+    background-image: url(../../images/apointment-bg.png ), linear-gradient(91.75deg, #A035F4 0.46%, #C688F6 100%) ;
+    background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: block;
+        max-width: 1920px;
+        max-height: 381px;
+    text-align: center;}
+
+        .input{
+            width: 424px;
+                height: 65px;
+                background: #FFFFFF;
+                    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+                    border-radius: 50px;
+                    border-style: hidden;
+                    padding-left: 45px;
+        }
+
+        .inputs :not(:last-child){
+            margin-right: 63px;
+            
+        }
+        .inputs{
+            display: inline-block;
+            margin-right: 150px;
+        }
+
+        ::placeholder{
+            
+            font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+                /* identical to box height */
+            
+            
+                color: #000000;
+        }
