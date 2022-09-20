@@ -1,41 +1,62 @@
-.contacts-list{
-    width: 250px;
-    margin-bottom: 58px;
-    &_item{
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 28px;
-        margin-bottom: 40px;
-        padding-left: 48px;
-        position: relative;
-        &__place{
-            &::before{
-                content: url(../../images/placeholder.png);
-                position: absolute;
-                top: 0px;
-                left: 0px;
-            }
+.contacts{
+    &-items{
+        display: flex;
+    }
+    &-item{
+        &_left{ 
+            max-width: 376px;
+            padding-left: 27px;
+            padding-right: 92px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 50px rgba(202, 122, 251, 0.4);
+            margin-right: 35px;
         }
-        &__phone{
-            &::before{
-                content: url(../../images/phone.png);
-                position: absolute;
-                top: 0px;
-                left: 0px;
-            }
+        &_right{ 
+            max-width: 1190px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 50px rgba(202, 122, 251, 0.4);
         }
-        &__mail{
-            &::before{
-                content: url(../../images/mail.png);
-                position: absolute;
-                top: 0px;
-                left: 0px;
+    }
+    &-list{
+        width: 250px;
+        margin-bottom: 58px;
+        &_item{
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 40px;
+            padding-left: 48px;
+            position: relative;
+            &__place{
+                &::before{
+                    content: url(../../images/placeholder.png);
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                }
+            }
+            &__phone{
+                &::before{
+                    content: url(../../images/phone.png);
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                }
+            }
+            &__mail{
+                &::before{
+                    content: url(../../images/mail.png);
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                }
             }
         }
     }
+   
 }
 
 
 .contacts-item_left{
-    padding-bottom: 98px;
+    padding-bottom: 78px;
 }
