@@ -323,7 +323,8 @@ body.modal-open {
     .page-footer_items__position {
       margin-right: 239px; }
     .page-footer_items-wrap {
-      margin-left: 324px; }
+      margin-left: 324px;
+      position: relative; }
   .page-footer_item {
     color: #ffffff;
     margin-bottom: 30px; }
@@ -349,7 +350,8 @@ body.modal-open {
 .arrow-up {
   position: absolute;
   bottom: 109px;
-  left: 1400px; }
+  left: -220px;
+  cursor: pointer; }
 
 .header {
   font-family: 'Montserrat';
@@ -554,6 +556,9 @@ body.modal-open {
       position: absolute;
       top: 0px;
       left: 0px; }
+.contacts_map {
+  width: 1190px;
+  height: 560px; }
 
 .contacts-item_left {
   padding-bottom: 78px; }

@@ -20,6 +20,7 @@
         }
         &-wrap{
             margin-left: 324px;
+            position: relative;
         }
     }
     &_item{
@@ -55,5 +56,6 @@
 .arrow-up{
     position: absolute;
     bottom: 109px;
-    left: 1400px;
+    left: -220px;
+    cursor: pointer;
 }
