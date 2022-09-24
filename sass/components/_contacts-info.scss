@@ -1,6 +1,10 @@
 .contacts{
+    &_social-links{
+        margin-bottom: 0;
+    }
     &-items{
         display: flex;
+        padding-bottom: 80px;
     }
     &-item{
         &_left{ 
@@ -18,8 +22,16 @@
         }
     }
     &-list{
-        width: 250px;
+        width: 260px;
         margin-bottom: 58px;
+        &_link{
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 40px;
+            text-decoration: none;
+            color: #000000;
+        }
         &_item{
             font-weight: 400;
             font-size: 24px;
@@ -29,7 +41,7 @@
             position: relative;
             &__place{
                 &::before{
-                    content: url(../../images/placeholder.png);
+                    content: url(./../images/placeholder.png);
                     position: absolute;
                     top: 0px;
                     left: 0px;
@@ -37,7 +49,7 @@
             }
             &__phone{
                 &::before{
-                    content: url(../../images/phone.png);
+                    content: url(./../images/phone.png);
                     position: absolute;
                     top: 0px;
                     left: 0px;
@@ -45,7 +57,7 @@
             }
             &__mail{
                 &::before{
-                    content: url(../../images/mail.png);
+                    content: url(./../images/mail.png);
                     position: absolute;
                     top: 0px;
                     left: 0px;
@@ -53,7 +65,10 @@
             }
         }
     }
-   
+    &_map{
+        width: 1190px;
+        height: 560px;
+    } 
 }
 
 

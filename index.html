@@ -282,10 +282,10 @@
                 <h2 class="header">Контакти</h2>
                 <ul class="contacts-list list">
                     <li class="contacts-list_item contacts-list_item__place">Україна, м. Дніпро, вул. Шевченко  10</li>
-                    <li class="contacts-list_item contacts-list_item__phone">+380681825627</li>
-                    <li class="contacts-list_item contacts-list_item__mail">ygai@gmail.com</li>
+                    <li class="contacts-list_item contacts-list_item__phone"><a class="contacts-list_link" href="tel:+380681825627">+380681825627</a></li>
+                    <li class="contacts-list_item contacts-list_item__mail"><a class="contacts-list_link" href="mailto:ygai@gmail.com">ygai@gmail.com</a></li>
                 </ul>
-                <ul class="social-links list">
+                <ul class="contacts_social-links social-links list">
                     <li><a href=""><img src="./images/instagram.png" alt=""></a></li>
                     <li><a href=""><svg width="40" height="40">
                         <use href=./images/svg/sprite.svg#facebook></use>
@@ -296,7 +296,7 @@
                  </ul>
             </div>
             <div class="contacts-item contacts-item_right">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.923481254781!2d35.052394115860494!3d48.45799767925038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2d98ec30883%3A0x5345ab66a95c488e!2z0YPQuy4g0KjQtdCy0YfQtdC90LrQviwgMTAsINCU0L3QtdC_0YAsINCU0L3QtdC_0YDQvtC_0LXRgtGA0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA0OTAwMA!5e0!3m2!1sru!2sua!4v1663684774506!5m2!1sru!2sua" width="1190" height="560" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="contacts_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.923481254781!2d35.052394115860494!3d48.45799767925038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2d98ec30883%3A0x5345ab66a95c488e!2z0YPQuy4g0KjQtdCy0YfQtdC90LrQviwgMTAsINCU0L3QtdC_0YAsINCU0L3QtdC_0YDQvtC_0LXRgtGA0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA0OTAwMA!5e0!3m2!1sru!2sua!4v1663684774506!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>
@@ -306,12 +306,45 @@
 </main>
 <footer class="page-footer">
     <div class="container">
-    <a href="">logo</a>
-    <div class="subscribe">
-        <ul>
-            <li></li>
-        </ul>
-    </div>
+        <div class="page-footer_wrapper">
+            <a class="page-footer_logo page-footer_link" href=""><img src="./images/logo.png" alt=""></a>
+            <div class="page-footer_list">
+                <ul class="page-footer_items page-footer_items__position">
+                    <li class="page-footer_item"><a class="page-footer_link" href="">Головна</a></li>
+                    <li class="page-footer_item"><a class="page-footer_link" href="">Кваліфікація</a></li>
+                    <li class="page-footer_item"><a class="page-footer_link" href="">Напрямки роботи</a></li>
+                </ul>
+                <ul class="page-footer_items page-footer_items__position">
+                    <li class="page-footer_item"><a class="page-footer_link" href="">Про Мене</a></li>
+                    <li class="page-footer_item"><a class="page-footer_link" href="">Консультаціі</a></li>
+                    <li class="page-footer_item"><a class="page-footer_link" href="">Відгуки</a></li>
+                </ul>
+                
+                <div class="page-footer_items-wrap">
+                    <ul class="page-footer_items">
+                        <li class="page-footer_item">Контакти</li>
+                        <li class="page-footer_item"><a class="page-footer_link" href="tel:+380681825627">+380681825627</a></li>
+                        <li class="page-footer_item"><a class="page-footer_link" href="mailto:ygai@gmail.com">ygai@gmail.com</a></li>
+                    </ul>
+                    <ul class="page-footer_social-links social-links list">
+                        <li><a href=""><img src="./images/instagram.png" alt=""></a></li>
+                        <li><a href=""><svg width="40" height="40">
+                            <use href=./images/svg/sprite.svg#facebook></use>
+                        </svg></a></li>
+                        <li><a href=""><svg width="40" height="40">
+                            <use href=./images/svg/sprite.svg#telegram></use>
+                        </svg></a></li>
+                     </ul>
+                     <div class="arrow-up">
+                        <a href=""><img src="./images/arrow-up.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="privacy">
+            Політика конфіденційності
+        </div>
+        
     </div>
 </footer>
 </body>
