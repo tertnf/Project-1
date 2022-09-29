@@ -147,6 +147,10 @@ margin-right: 27px;
 
 .hero-wrap{
     display: flex;
+    background-image: url(./../images/hero-bg.png), url(./../images/hero-decor.png);
+    background-position: right, center;
+    background-size: contain;
+    background-repeat: no-repeat;
 
 }
 
@@ -155,7 +159,6 @@ margin-right: 27px;
     width: 784px;
     height:765px;
 }
-
 .logo{
     margin-right: 81px;
   
