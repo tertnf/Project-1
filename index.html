@@ -17,14 +17,14 @@
 <body>
     <header>
         <div class="container header-wrap">
-        <a class="logo" href=""><img src="./images/logo.png" alt=""></a>
+        <a class="logo" href="./index.html"><img src="./images/logo.png" alt=""></a>
         <ul class="contacts list">
             <li><a class="link contacts-item" href="tel:+380681825627"><img class="contacts-img" src="./images/phone.png" alt="">+380681825627</a></li>
             <li><a class="link contacts-item" href="mailto:ygai@gmail.com"><img class="contacts-img" src="./images/mail.png" alt=""> ygai@gmail.com</a> </li>
         </ul>
         <nav>
             <ul class="navigation list">
-                <li class="navigation-item"><a class="link" href="#qualification">Кваліфікація</a></li>
+                <li class="navigation-item current"><a class="link " href="#qualification">Кваліфікація</a></li>
                 <li class="navigation-item"><a class="link" href="#directions">Напрямки роботи</a></li>
                 <li class="navigation-item"><a class="link" href="#about">Про мене</a></li>
                 <li class="navigation-item"><a class="link" href="#consultation">Консультації</a></li>
@@ -43,9 +43,11 @@
          <p class="hero-text">Записуйтесь на консультацію, щоб змінити життя прямо зараз</p>
          <ul class="hero-button list">
             <li>
-                <button class="button button-accent" type="button">Записатися</button>
+                <a class="button button-accent link" href="#appointment">Записатися</a>
             </li>
-            <li><button class="button" type="button">Відгуки</button></li>
+            <li>
+                <a class="button link" href="#feedback">Відгуки</a>
+            </li>
          </ul>
          <ul class="social-links list">
             <li><a href=""><img src="./images/instagram.png" alt=""></a></li>
@@ -98,8 +100,9 @@
             <div class="about-wrap">
                 <div class="about-content"> 
                     <img class="about-img" src="./images/psiholog-ugai.png" alt=""></div>
+                   
                     <div class="about-description">
-                    <h2 class="header" id="about">Про мене</h2>
+                     <h2 class="header" id="about">Про мене</h2>
                         <article>
                             <p class="about-text">Я — Угай Наталія Іванівна, щаслива жінка, дружина, а ще дипломований психолог, дитячий психолог.
                             З дитинства я помічала скрізь красу, як у людині так і в оточуючому середовищі. Це все згодом перейшло у професійну
@@ -143,15 +146,16 @@
         <h2 class="header" id="consultation">Консультації</h2>
         <ul class="list consultation-list">
             <li class="consultation-item">
-                <img class="consultation-img" src="./images/psihologist-dnipro.jpg" alt="">
                 <div class="consultation-decor decor-left"></div>
+                <img class="consultation-img" src="./images/psihologist-dnipro.jpg" alt="">
                 <div class="consultation-block">
                 <p class="consultation-format">Офлайн Консультація</p>
                 <p class="consultation-text">Проводиться за адресою:&ensp;<address class="consultation-text">м. Дніпро, вул. Шевченко 10</address></p>
                 </div>
             </li>
-            <li class="consultation-item"><img class="consultation-img" src="./images/psihologist-online.jpg" alt="">
+            <li class="consultation-item">
                 <div class="consultation-decor decor-right"></div>
+                <img class="consultation-img" src="./images/psihologist-online.jpg" alt="">
                 <div class="consultation-block"><p class="consultation-format">Онлайн Консультація</p>
                 <p class="consultation-text">Проводиться по телефону або за допомогою відеозв'язку</p></div>
             </li>
@@ -159,12 +163,12 @@
         </div>
     </section>
     <section class="appointment-section">
-        <div class="container apointment-bg"><h2 class="header apointment-header">Записатися на консультацію</h2>
+        <div class="container appointment-bg"><h2 class="header appointment-header" id="appointment">Записатися на консультацію</h2>
             <div class="inputs"> 
                 <input class="input" type="text" id="name" placeholder="Ім'я">
                 <input class="input" type="text" id="tel" placeholder="Телефон">
             </div>
-            <button class="button apointment-button" type="submit">Записатися</button>
+            <button class="button appointment-button" type="submit">Записатися</button>
         </div>
     </section>
     

@@ -91,6 +91,7 @@ h1 {margin-bottom: 44px;
 padding-top: 151px;}
 
 .button{
+    display: inline-block;
     width: 237px;
     height: 70px; 
     border-radius: 50px;   
@@ -105,6 +106,10 @@ padding-top: 151px;}
         line-height: 28px;
     
         color: #161616;
+        text-align: center;
+       padding-top: 21px;
+       padding-bottom: 21px;
+    
 }
 .button-accent{
     background-image: linear-gradient(to right, #B33EFB, #391FD9);
@@ -118,6 +123,7 @@ color: #FFFFFF;
         line-height: 28px;
     
         color: #FFFFFF;
+        
 
 }
 .hero-button :not(:last-child){

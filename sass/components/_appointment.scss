@@ -1,4 +1,4 @@
-.apointment-button{
+.appointment-button{
     width: 260px;
         height: 65px;
         background: linear-gradient(94.38deg, #B33EFB -3.82%, #391FD9 99.49%);
@@ -6,7 +6,7 @@
             border-style: hidden;
             
 }
-.apointment-header{
+.appointment-header{
     font-family: 'Montserrat';
         font-style: normal;
         font-weight: 600;
@@ -20,7 +20,7 @@
 }
 
 
-.apointment-bg{
+.appointment-bg{
     background-image: url(../../images/apointment-bg.png ), linear-gradient(91.75deg, #A035F4 0.46%, #C688F6 100%) ;
     background-repeat: no-repeat;
         background-position: center;
@@ -60,4 +60,8 @@
             
             
                 color: #000000;
+        }
+
+        .appointment-section .header::after{
+            display: none;
         }

@@ -66,9 +66,7 @@ background-color: #F5E9FB;}
     
 // }
 
-.about-section .header{
-   text-align: center; 
-}
+
 
 .about-text{font-family: 'Roboto';
     font-style: normal;
@@ -83,4 +81,19 @@ background-color: #F5E9FB;}
             margin-top: 20px;
             margin-bottom: 20px;
         }
+.about-description{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.about-section .header{
+  
+    text-align: left;
+   
+}
+.about-section .header::after{
+    width: 40%;
+    
+}
+
 

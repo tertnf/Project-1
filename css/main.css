@@ -85,10 +85,6 @@ img {
   display: flex;
 }
 
-.about-section .header {
-  text-align: center;
-}
-
 .about-text {
   font-family: 'Roboto';
   font-style: normal;
@@ -102,6 +98,25 @@ img {
   display: inline-block;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.about-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-section .header {
+  text-align: left;
+}
+
+.about-section .header::after {
+  width: 40%;
 }
 
 .header-wrap {
@@ -150,6 +165,14 @@ header .container {
   font-size: 20px;
   line-height: 23px;
   color: #181717;
+}
+
+.navigation-item:hover {
+  border-bottom: 2px solid #9957ED;
+}
+
+.current {
+  border-bottom: 2px solid #9957ED;
 }
 
 .hero-section {
@@ -229,6 +252,7 @@ h1 {
 }
 
 .button {
+  display: inline-block;
   width: 237px;
   height: 70px;
   border-radius: 50px;
@@ -241,6 +265,9 @@ h1 {
   font-size: 24px;
   line-height: 28px;
   color: #161616;
+  text-align: center;
+  padding-top: 21px;
+  padding-bottom: 21px;
 }
 
 .button-accent {
@@ -386,6 +413,10 @@ body.modal-open {
   min-height: 56px;
 }
 
+.direction-section .header::after {
+  width: 43%;
+}
+
 .contacts {
   color: #0A0909;
   margin-right: auto;
@@ -463,6 +494,7 @@ body.modal-open {
 }
 
 .header {
+  display: inline-block;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -472,6 +504,15 @@ body.modal-open {
   color: #B718EF;
   padding-top: 80px;
   margin-bottom: 55px;
+}
+
+.header::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 3px;
+  background-color: #BD3CEB;
+  margin-top: 10px;
 }
 
 .consultation-list {
@@ -501,6 +542,7 @@ body.modal-open {
   position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: -1;
 }
 
 .decor-left {
@@ -561,7 +603,7 @@ body.modal-open {
   padding-bottom: 117px;
 }
 
-.apointment-button {
+.appointment-button {
   width: 260px;
   height: 65px;
   background: linear-gradient(94.38deg, #B33EFB -3.82%, #391FD9 99.49%);
@@ -569,7 +611,7 @@ body.modal-open {
   border-style: hidden;
 }
 
-.apointment-header {
+.appointment-header {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -580,7 +622,7 @@ body.modal-open {
   text-align: center;
 }
 
-.apointment-bg {
+.appointment-bg {
   background-image: url(../../images/apointment-bg.png), linear-gradient(91.75deg, #A035F4 0.46%, #C688F6 100%);
   background-repeat: no-repeat;
   background-position: center;
@@ -651,6 +693,10 @@ body.modal-open {
   color: #000000;
 }
 
+.appointment-section .header::after {
+  display: none;
+}
+
 .qualification-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -684,6 +730,10 @@ body.modal-open {
 
 .qualification-section .container {
   padding-bottom: 131px;
+}
+
+.qualification-section .header::after {
+  width: 46%;
 }
 
 .contacts_social-links {
@@ -833,5 +883,10 @@ body.modal-open {
 
 .feedback-section .arrows {
   fill: red;
+}
+
+.feedback-section .header::after {
+  background-color: #ffffff;
+  width: 65%;
 }
 /*# sourceMappingURL=main.css.map */
