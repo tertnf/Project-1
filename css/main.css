@@ -119,12 +119,17 @@ img {
   width: 40%;
 }
 
+.header .container {
+  position: relative;
+}
+
 .header-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #F5E9FB;
   padding-top: 57px;
-  padding-bottom: 16px;
+  z-index: 2;
 }
 
 .navigation {
@@ -144,10 +149,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-header .container {
-  background-color: #F5E9FB;
+  position: relative;
 }
 
 .navigation li {
@@ -175,16 +177,17 @@ header .container {
   border-bottom: 2px solid #9957ED;
 }
 
-.hero-section {
-  display: block;
-  outline: 1px solid red;
+.navigation-item a:active {
+  color: #181717;
 }
 
-.hero-foto {
-  width: 400px;
-  height: 400px;
-  margin-right: 50px;
-  border-radius: 50%;
+.navigation-item a:visited {
+  color: #181717;
+}
+
+.hero-section {
+  display: block;
+  z-index: 5;
 }
 
 .hero-section .container {
@@ -313,15 +316,11 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(./../images/hero-bg.png), url(./../images/hero-decor.png);
-  background-position: right, center;
+  background-image: url(./../images/hero-decor.png);
+  background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-}
-
-.hero-foto {
-  width: 784px;
-  height: 765px;
+  z-index: 1;
 }
 
 .logo {
@@ -340,6 +339,23 @@ h1 {
   font-size: 20px;
   line-height: 23px;
   color: #0A0909;
+}
+
+.foto-frame {
+  display: block;
+  position: absolute;
+  left: 50%;
+  z-index: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-image: url(./../images/nat-ugai.png);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  height: 900px;
+  width: 1920px;
 }
 
 body {
@@ -828,6 +844,7 @@ body.modal-open {
   border-color: aqua;
   border: 5px;
   padding: 29px 23px 42px 33px;
+  overflow-y: scroll;
 }
 
 .feedback-item {
@@ -870,6 +887,7 @@ body.modal-open {
 
 .feedback-img {
   margin-right: 30px;
+  height: 80px;
 }
 
 .feedback-wrap {
@@ -888,5 +906,9 @@ body.modal-open {
 .feedback-section .header::after {
   background-color: #ffffff;
   width: 65%;
+}
+
+.feedback-img:hover {
+  height: 240px;
 }
 /*# sourceMappingURL=main.css.map */
