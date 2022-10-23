@@ -74,6 +74,7 @@ margin-bottom: 21px;
     width: 50px;
     height: 50px;
     background-image: url(./../images/web.png);
+    
     display: block;
     
     margin-bottom: 21px;
@@ -81,10 +82,20 @@ margin-bottom: 21px;
 
 .consultation-block{
     position: absolute;
-    top: 272px;
+    bottom: 50px;
     margin-left: 50px;
   
 }
+.consultation-item{
+    &:hover{
+        .consultation-block:before {
+            width: 70px; height: 70px;
+        background-repeat: no-repeat;
+        }
+        
+    }
+}
+
 
 .consultation-section .container{
     padding-bottom: 117px;

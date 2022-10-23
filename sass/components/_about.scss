@@ -33,6 +33,15 @@ text-align: center;
  margin-right: 40px;
 }
 
+.counter-list-item:hover{
+    .counter{
+    font-size: 75px;
+    }
+    // .counter-description{
+    //     font-size: 26px;
+    // }
+}
+
 .about-description{
 font-family: 'Roboto';
     font-style: normal;
@@ -50,6 +59,7 @@ font-family: 'Roboto';
 background-color: #F5E9FB;}
 
 .about-img{
+    
     margin-bottom: 17px;
     max-width: 618px;
     padding-top: 80px;
@@ -62,9 +72,9 @@ background-color: #F5E9FB;}
    
 }
 
-// .about-content{
-    
-// }
+.about-content{
+   position: relative; 
+}
 
 
 
@@ -94,6 +104,13 @@ background-color: #F5E9FB;}
 .about-section .header::after{
     width: 40%;
     
+}
+
+.about-decor{
+    position: absolute;
+    bottom: -10px;
+    right: 25px;
+    width: 256px;
 }
 
 

@@ -1,14 +1,14 @@
 .header .container{
   
   position:relative;
- 
-    
+ z-index: 1;
+    outline: 5px solid blue;
 }
 .header-wrap{
     display: flex;
     background-color: #F5E9FB;
         padding-top: 57px;
-        z-index: 2;
+        
         // padding-bottom: 16px;
 // position: absolute;
 // left: 50%;
@@ -28,6 +28,7 @@
 .navigation {
   display: flex;
   margin-right: 3px;
+  
 
 }
 
@@ -36,13 +37,13 @@ justify-content: space-between;
 align-items: center;
 position: relative;
 
-
 }
 
 
 
 
 .navigation li{
+  
         padding: 10px;
     &:not(:last-child){
       margin-right: 20px;  
@@ -55,7 +56,10 @@ font-weight: 400;
 font-size: 20px;
 line-height: 23px;
 
-color: #181717;}
+color: #181717;
+z-index: 10;
+  
+}
 
 .navigation-item:hover{
   border-bottom: 2px solid #9957ED;

@@ -59,6 +59,10 @@ img {
   margin-right: 40px;
 }
 
+.counter-list-item:hover .counter {
+  font-size: 75px;
+}
+
 .about-description {
   font-family: 'Roboto';
   font-style: normal;
@@ -83,6 +87,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.about-content {
+  position: relative;
 }
 
 .about-text {
@@ -119,8 +127,17 @@ img {
   width: 40%;
 }
 
+.about-decor {
+  position: absolute;
+  bottom: -10px;
+  right: 25px;
+  width: 256px;
+}
+
 .header .container {
   position: relative;
+  z-index: 1;
+  outline: 5px solid blue;
 }
 
 .header-wrap {
@@ -129,7 +146,6 @@ img {
   display: flex;
   background-color: #F5E9FB;
   padding-top: 57px;
-  z-index: 2;
 }
 
 .navigation {
@@ -167,6 +183,7 @@ header {
   font-size: 20px;
   line-height: 23px;
   color: #181717;
+  z-index: 10;
 }
 
 .navigation-item:hover {
@@ -183,11 +200,6 @@ header {
 
 .navigation-item a:visited {
   color: #181717;
-}
-
-.hero-section {
-  display: block;
-  z-index: 5;
 }
 
 .hero-section .container {
@@ -273,6 +285,11 @@ h1 {
   padding-bottom: 21px;
 }
 
+.button:focus, .button:hover {
+  -webkit-box-shadow: 0px 4px 4px rgba(94, 68, 68, 0.25);
+          box-shadow: 0px 4px 4px rgba(94, 68, 68, 0.25);
+}
+
 .button-accent {
   background-image: -webkit-gradient(linear, left top, right top, from(#B33EFB), to(#391FD9));
   background-image: linear-gradient(to right, #B33EFB, #391FD9);
@@ -320,7 +337,7 @@ h1 {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  z-index: 1;
+  z-index: 0;
 }
 
 .logo {
@@ -345,7 +362,7 @@ h1 {
   display: block;
   position: absolute;
   left: 50%;
-  z-index: 0;
+  z-index: 1;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background-image: url(./../images/nat-ugai.png);
@@ -356,6 +373,14 @@ h1 {
   top: 0px;
   height: 900px;
   width: 1920px;
+}
+
+.contacts {
+  z-index: 10;
+}
+
+.hero-content {
+  z-index: 20;
 }
 
 body {
@@ -443,7 +468,7 @@ body.modal-open {
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
-  background-color: #28182E;
+  background-color: #38134A;
   color: #ffffff;
 }
 
@@ -494,7 +519,7 @@ body.modal-open {
 }
 
 .page-footer .container {
-  background-color: #28182E;
+  background-color: #38134A;
 }
 
 .privacy {
@@ -529,6 +554,17 @@ body.modal-open {
   height: 3px;
   background-color: #BD3CEB;
   margin-top: 10px;
+}
+
+.arrow {
+  width: 69px;
+  height: 47px;
+  border-radius: 50px;
+}
+
+.arrow:focus, .arrow:hover {
+  -webkit-box-shadow: 0px 4px 4px rgba(94, 68, 68, 0.25);
+          box-shadow: 0px 4px 4px rgba(94, 68, 68, 0.25);
 }
 
 .consultation-list {
@@ -611,8 +647,14 @@ body.modal-open {
 
 .consultation-block {
   position: absolute;
-  top: 272px;
+  bottom: 50px;
   margin-left: 50px;
+}
+
+.consultation-item:hover .consultation-block:before {
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
 }
 
 .consultation-section .container {
