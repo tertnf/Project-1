@@ -454,6 +454,18 @@ body.modal-open {
   min-height: 56px;
 }
 
+.direction-item:hover.direction-item::before {
+  width: 34px;
+  height: 34px;
+  background-repeat: no-repeat;
+}
+
+.direction-item:hover.direction-item::after {
+  width: 34px;
+  height: 34px;
+  background-repeat: no-repeat;
+}
+
 .direction-section .header::after {
   width: 43%;
 }
