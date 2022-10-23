@@ -9,10 +9,16 @@
     border: 5px;
     padding: 29px 23px 42px 33px;
     overflow-y: scroll;
+    @supports (scrollbar-gutter: stable) {
+            overflow: auto;
+            scrollbar-gutter: stable;
+        }
+    
 }
 .feedback-item {
      margin-right: 32px;
-   
+    scrollbar-width: thin;
+   scrollbar-color: #6969dd #C460FF;
 }
 
 .feedback-bg{
@@ -76,3 +82,24 @@
 .feedback-img:hover{
     height: 240px;}
 
+
+    .feedback-section{
+::-webkit-scrollbar {
+    width: 25px;
+   
+}
+
+::-webkit-scrollbar-track {
+    background-color: #C460FF;
+   
+    
+    
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(91.75deg,
+        #A035F4 0.46%,
+        #C688F6 100%);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);border-radius: 50px;
+}
+    }
