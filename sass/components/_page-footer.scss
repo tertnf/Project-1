@@ -182,10 +182,10 @@
         }
         &_items{
             &__position{
-                margin-right: 60px;
+                margin-right: 55px;
             }
             &-wrap{
-                margin-left: 160px;
+                margin-left: 150px;
             }
         }
         &_logo{
@@ -209,7 +209,7 @@
                 margin-right: 50px;
             }
             &-wrap{
-                margin-left: 140px;
+                margin-left: 120px;
             }
         }
         &_logo{
@@ -227,14 +227,14 @@
     .page-footer{
         &_items{
             &__position{
-                margin-right: 40px;
+                margin-right: 35px;
             }
             &-wrap{
-                margin-left: 80px;
+                margin-left: 70px;
             }
         }
         &_logo{
-            margin-right: 40px;
+            margin-right: 35px;
         }
     }
 
@@ -251,11 +251,15 @@
                 margin-right: 30px;
             }
             &-wrap{
-                margin-left: 60px;
+                margin-left: 50px;
             }
         }
         &_logo{
             margin-right: 30px;
+        }
+        &_img{
+            max-width: 51px;
+            max-height: 44px;
         }
     }
 
