@@ -26,6 +26,9 @@
       
 }
 .navigation {
+  @media screen and (max-width: 576px){ 
+    display: none;
+  }
   display: flex;
   margin-right: 3px;
   

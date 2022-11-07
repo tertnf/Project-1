@@ -155,6 +155,12 @@ img {
   margin-right: 3px;
 }
 
+@media screen and (max-width: 576px) {
+  .navigation {
+    display: none;
+  }
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
