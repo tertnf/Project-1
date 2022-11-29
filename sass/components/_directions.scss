@@ -3,12 +3,18 @@
     
             max-width: 381px;
             
-        
+      
    
 }
 .container-directions{
+    position: relative;
     display: flex;
     padding-bottom: 110px;
+
+    @media screen and (max-width:767px) {
+        display: block;
+        padding-bottom: 13px;
+    }
 }
 .container-directions :first-child{
     
@@ -22,8 +28,12 @@
         display: inline-block;
         background-image: url(./../images/check.png);
 
-        
+        @media screen and (max-width: 767px) {
+                top: -42px;
+                right: 68px;
+            }
 }
+ 
 }
 
 .container-directions :last-child{
@@ -37,16 +47,56 @@
         width: 32px;
         height: 32px;
         background-image: url(./../images/check.png);
-        display: inline-block;
+        display: inline-block;  
+        @media screen and (max-width: 767px){
+      top: -42px;
+      left: 140px;
     }
+         
+    }
+
 }
 
+  @media screen and (max-width: 767px) {  .directions-decor-bottom  {
+    position: absolute;
+          display: block;
+          width: 257px;
+          height: 480px;
+          background-image: url(./../images/mobile/mobile-directions-decor-left.png);
+          background-repeat: no-repeat;
+          background-position: left;
+          background-size: cover;
+      bottom: 0px;
+      }
+  }
+
+        @media screen and (max-width: 767px) {
+            .directions-decor-top {
+                position: absolute;
+                display: block;
+                width: 333px;
+                height: 614px;
+                background-image: url(./../images/mobile/mobile-directions-decor-right.png);
+                background-repeat: no-repeat;
+                background-position: right;
+                background-size: cover;
+                top: -210px;
+            }
+        }
+ 
 .directions-picture{
+   @media screen and (min-width: 768px){
     max-width: 575px;
     margin-right: 60px;
     margin: -30px 135px 0px 135px;
 
-}
+
+   }
+        @media screen and (max-width: 767px) {
+   margin-top: 22px ;
+   margin-bottom: 65px ;
+
+}}
 .direction-item{
     margin-bottom: 40px;
     font-family: 'Roboto';
@@ -74,9 +124,33 @@ min-height: 56px;
 
 .direction-section .header::after{
     width: 43%;
+@media screen and (max-width:767px) {
+    width: 53%;
+        margin-left: 56px;}
 
 }
 
+@media screen and (max-width:767px) {
+.directions{
+display: flex;  
+ flex-wrap: wrap;
+ 
+ margin-left: -20px;
+ margin-bottom: -40px;
+ margin-top: 35px;
+}
+.direction-item{
+    
+    flex-basis: calc(100% / 2 - 20px);
+ 
+    margin-left: 20px;
 
 
-
+    
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+    
+      
+}
+}

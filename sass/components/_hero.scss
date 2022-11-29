@@ -51,6 +51,13 @@ font-family: 'Montserrat';
     text-transform: uppercase;
 
     color: #000000;
+    @media screen and (max-width: 767px){
+        
+            font-size: 32px;
+            line-height: 39px;
+            text-align: center;
+           
+    }
 }
 
 .hero-header-person{
@@ -68,13 +75,20 @@ font-family: 'Montserrat';
             -webkit-text-fill-color: transparent;
             background-clip: text;
             // text-fill-color: transparent;
+
+            @media screen and (max-width:767px){
+                
+                    font-size: 32px;
+                    line-height: 44px;
+                    text-align: center;
+                    
+            }
 }
 
-h1 {margin-bottom: 44px;
-padding-top: 151px;}
+
 
 .button{
-    display: inline-block;
+    display: flex;
     width: 237px;
     height: 70px; 
     border-radius: 50px;   
@@ -90,9 +104,22 @@ padding-top: 151px;}
     
         color: #161616;
         text-align: center;
+     
        padding-top: 21px;
        padding-bottom: 21px;
-    
+    @media screen and (max-width:767px){
+        margin-bottom: 41px;
+        width: 150px;
+        height: 55px;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        
+            font-size: 18px;
+            line-height: 21px;
+        
+           
+    }
 }
 .button {
     &:focus,
@@ -106,18 +133,17 @@ padding-top: 151px;}
 border-style: hidden;
 color: #FFFFFF;
 
-    font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 28px;
     
-        color: #FFFFFF;
+    
+      
         
 
 }
 .hero-button :not(:last-child){
 margin-right: 27px;
+@media screen and (max-width:767px){
+margin-right: 33px;
+}
 }
 .hero-text{
     margin-bottom: 64px;
@@ -129,6 +155,16 @@ margin-right: 27px;
     
         color: #141313;
         max-width: 507px;
+
+        @media screen and (max-width: 767px){
+            
+                font-size: 20px;
+                line-height: 23px;
+                text-align: center;
+                width: 335px;
+
+                margin-bottom: 36px;
+        }
 }
 
 .social-links{
@@ -136,7 +172,9 @@ margin-right: 27px;
     
             margin-bottom: 50px;
           
-           
+       @media screen and (max-width:767px){
+        display: none;
+       }    
             
        
 }
@@ -154,7 +192,9 @@ margin-right: 27px;
     z-index: 0;
     // left: 50%;
     // transform: translateX(-50%);
-
+@media screen and (max-width: 767px){
+    background-image: none;
+}
 }
 
 // .hero-decor{
@@ -178,6 +218,11 @@ margin-right: 27px;
 // }
 .logo{
     margin-right: 81px;
+    @media screen and (max-width: 767px){
+        margin-right: 44px;
+        width: 57px;
+        height: 45px;
+    }
   
 }
 
@@ -212,6 +257,13 @@ margin-right: 27px;
               top:0px;
                 height: 900px;
                     width: 1920px;
+                    @media screen and (max-width:767px){
+                        background-image: url(./../images/mobile-hero-img.png);
+                        height: 816px;
+                            width: 811px;
+                           margin-left: auto;
+                           margin-right: auto;
+                    }
 }
 .contacts{
     z-index: 10;
@@ -221,4 +273,14 @@ margin-right: 27px;
  z-index: 20;
 
 
+}
+
+h1{margin-bottom: 44px;
+    padding-top: 151px;
+    @media screen and (max-width:767px){
+        width: 335px;
+        text-align: center;
+        padding-top: 45px;
+        margin-bottom: 370px;
+    }
 }

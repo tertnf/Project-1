@@ -25,7 +25,7 @@ img {
 }
 
 .counter-description {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -33,6 +33,12 @@ img {
   text-align: center;
   color: #000000;
   max-width: 203px;
+}
+@media screen and (max-width: 767px) {
+  .counter-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .counter-list {
@@ -42,29 +48,36 @@ img {
   padding-bottom: 87px;
 }
 
+@media screen and (max-width: 767px) {
+  .counter-list {
+    display: block;
+    padding-bottom: 41px;
+  }
+  .counter-list-item:not(:last-child) {
+    margin-bottom: 35px;
+  }
+}
 .counter {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 64px;
   line-height: 78px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: #AA5CE2;
   text-align: center;
 }
 
-.counter-list-item:not(:last-child) {
-  margin-right: 40px;
+@media screen and (min-width: 768px) {
+  .counter-list-item:not(:last-child) {
+    margin-right: 40px;
+  }
 }
-
 .counter-list-item:hover .counter {
   font-size: 75px;
 }
 
 .about-description {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -79,14 +92,27 @@ img {
 .about-img {
   margin-bottom: 17px;
   max-width: 618px;
-  padding-top: 80px;
   margin-right: 31px;
+}
+@media screen and (max-width: 767px) {
+  .about-img {
+    padding-top: 32px;
+  }
 }
 
 .about-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+@media screen and (max-width: 767px) {
+  .about-wrap {
+    display: block;
+  }
 }
 
 .about-content {
@@ -94,7 +120,7 @@ img {
 }
 
 .about-text {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -119,19 +145,33 @@ img {
           justify-content: center;
 }
 
-.about-section .header {
-  text-align: left;
+@media screen and (max-width: 767px) {
+  .about-section .header {
+    margin-left: auto;
+    margin-right: 358px;
+  }
 }
 
 .about-section .header::after {
   width: 40%;
 }
+@media screen and (max-width: 767px) {
+  .about-section .header::after {
+    width: 58%;
+    margin-left: 23px;
+  }
+}
 
 .about-decor {
   position: absolute;
-  bottom: -10px;
+  top: 606px;
   right: 25px;
   width: 256px;
+}
+@media screen and (max-width: 767px) {
+  .about-decor {
+    display: none;
+  }
 }
 
 .header .container {
@@ -146,6 +186,14 @@ img {
   display: flex;
   background-color: #F5E9FB;
   padding-top: 57px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .header-wrap {
+    padding-top: 42px;
+  }
 }
 
 .navigation {
@@ -154,7 +202,6 @@ img {
   display: flex;
   margin-right: 3px;
 }
-
 @media screen and (max-width: 576px) {
   .navigation {
     display: none;
@@ -177,13 +224,12 @@ header {
 .navigation li {
   padding: 10px;
 }
-
 .navigation li:not(:last-child) {
   margin-right: 20px;
 }
 
 .navigation-item {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -203,7 +249,6 @@ header {
 .navigation-item a:active {
   color: #181717;
 }
-
 .navigation-item a:visited {
   color: #181717;
 }
@@ -222,7 +267,7 @@ section {
 
 .hero-block-header {
   font-size: 25pt;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .hero-block-header::after {
@@ -244,7 +289,7 @@ section {
 }
 
 .hero-header-topic {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
@@ -253,9 +298,16 @@ section {
   text-transform: uppercase;
   color: #000000;
 }
+@media screen and (max-width: 767px) {
+  .hero-header-topic {
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+}
 
 .hero-header-person {
-  font-family: 'Pattaya';
+  font-family: "Pattaya";
   font-style: normal;
   font-weight: 400;
   font-size: 64px;
@@ -266,21 +318,25 @@ section {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-
-h1 {
-  margin-bottom: 44px;
-  padding-top: 151px;
+@media screen and (max-width: 767px) {
+  .hero-header-person {
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+  }
 }
 
 .button {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 237px;
   height: 70px;
   border-radius: 50px;
   border: 2px solid #3F0958;
   color: #161616;
   margin-bottom: 141px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -289,6 +345,22 @@ h1 {
   text-align: center;
   padding-top: 21px;
   padding-bottom: 21px;
+}
+@media screen and (max-width: 767px) {
+  .button {
+    margin-bottom: 41px;
+    width: 150px;
+    height: 55px;
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 18px;
+    line-height: 21px;
+  }
 }
 
 .button:focus, .button:hover {
@@ -301,21 +373,20 @@ h1 {
   background-image: linear-gradient(to right, #B33EFB, #391FD9);
   border-style: hidden;
   color: #FFFFFF;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  color: #FFFFFF;
 }
 
 .hero-button :not(:last-child) {
   margin-right: 27px;
 }
+@media screen and (max-width: 767px) {
+  .hero-button :not(:last-child) {
+    margin-right: 33px;
+  }
+}
 
 .hero-text {
   margin-bottom: 64px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -323,12 +394,26 @@ h1 {
   color: #141313;
   max-width: 507px;
 }
+@media screen and (max-width: 767px) {
+  .hero-text {
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    width: 335px;
+    margin-bottom: 36px;
+  }
+}
 
 .social-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 767px) {
+  .social-links {
+    display: none;
+  }
 }
 
 .social-links :not(:last-child) {
@@ -345,9 +430,21 @@ h1 {
   background-repeat: no-repeat;
   z-index: 0;
 }
+@media screen and (max-width: 767px) {
+  .hero-wrap {
+    background-image: none;
+  }
+}
 
 .logo {
   margin-right: 81px;
+}
+@media screen and (max-width: 767px) {
+  .logo {
+    margin-right: 44px;
+    width: 57px;
+    height: 45px;
+  }
 }
 
 .contacts-img {
@@ -356,7 +453,7 @@ h1 {
 }
 
 .contacts-item {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -380,6 +477,15 @@ h1 {
   height: 900px;
   width: 1920px;
 }
+@media screen and (max-width: 767px) {
+  .foto-frame {
+    background-image: url(./../images/mobile-hero-img.png);
+    height: 816px;
+    width: 811px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .contacts {
   z-index: 10;
@@ -389,10 +495,23 @@ h1 {
   z-index: 20;
 }
 
+h1 {
+  margin-bottom: 44px;
+  padding-top: 151px;
+}
+@media screen and (max-width: 767px) {
+  h1 {
+    width: 335px;
+    text-align: center;
+    padding-top: 45px;
+    margin-bottom: 370px;
+  }
+}
+
 body {
   background-color: #ffffff;
   color: #2f303a;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
 }
 
@@ -408,6 +527,13 @@ body.modal-open {
   margin-right: auto;
   max-width: 1920px;
 }
+@media screen and (max-width: 767px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 727px;
+  }
+}
 
 .directions {
   position: relative;
@@ -415,10 +541,17 @@ body.modal-open {
 }
 
 .container-directions {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 110px;
+}
+@media screen and (max-width: 767px) {
+  .container-directions {
+    display: block;
+    padding-bottom: 13px;
+  }
 }
 
 .container-directions :first-child .direction-item::after {
@@ -431,6 +564,12 @@ body.modal-open {
   display: inline-block;
   background-image: url(./../images/check.png);
 }
+@media screen and (max-width: 767px) {
+  .container-directions :first-child .direction-item::after {
+    top: -42px;
+    right: 68px;
+  }
+}
 
 .container-directions :last-child .direction-item::before {
   content: "";
@@ -441,16 +580,56 @@ body.modal-open {
   background-image: url(./../images/check.png);
   display: inline-block;
 }
+@media screen and (max-width: 767px) {
+  .container-directions :last-child .direction-item::before {
+    top: -42px;
+    left: 140px;
+  }
+}
 
-.directions-picture {
-  max-width: 575px;
-  margin-right: 60px;
-  margin: -30px 135px 0px 135px;
+@media screen and (max-width: 767px) {
+  .directions-decor-bottom {
+    position: absolute;
+    display: block;
+    width: 257px;
+    height: 480px;
+    background-image: url(./../images/mobile/mobile-directions-decor-left.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    bottom: 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .directions-decor-top {
+    position: absolute;
+    display: block;
+    width: 333px;
+    height: 614px;
+    background-image: url(./../images/mobile/mobile-directions-decor-right.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    top: -210px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .directions-picture {
+    max-width: 575px;
+    margin-right: 60px;
+    margin: -30px 135px 0px 135px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .directions-picture {
+    margin-top: 22px;
+    margin-bottom: 65px;
+  }
 }
 
 .direction-item {
   margin-bottom: 40px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -465,7 +644,6 @@ body.modal-open {
   height: 34px;
   background-repeat: no-repeat;
 }
-
 .direction-item:hover.direction-item::after {
   width: 34px;
   height: 34px;
@@ -475,10 +653,42 @@ body.modal-open {
 .direction-section .header::after {
   width: 43%;
 }
+@media screen and (max-width: 767px) {
+  .direction-section .header::after {
+    width: 53%;
+    margin-left: 56px;
+  }
+}
 
+@media screen and (max-width: 767px) {
+  .directions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -20px;
+    margin-bottom: -40px;
+    margin-top: 35px;
+  }
+  .direction-item {
+    -ms-flex-preferred-size: calc(50% - 20px);
+        flex-basis: calc(50% - 20px);
+    margin-left: 20px;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+  }
+}
 .contacts {
   color: #0A0909;
   margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-img {
+    display: none;
+  }
 }
 
 .page-footer {
@@ -489,48 +699,39 @@ body.modal-open {
   background-color: #38134A;
   color: #ffffff;
 }
-
 .page-footer_list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
 .page-footer_items {
   list-style: none;
   padding: 0;
 }
-
 .page-footer_items__position {
   margin-right: 239px;
 }
-
 .page-footer_items-wrap {
   margin-left: 324px;
   position: relative;
 }
-
 .page-footer_item {
   color: #ffffff;
   margin-bottom: 30px;
 }
-
 .page-footer_link {
   color: #ffffff;
   text-decoration: none;
 }
-
 .page-footer_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-top: 65px;
 }
-
 .page-footer_logo {
   margin-right: 212px;
 }
-
 .page-footer_social-links {
   margin-top: 38px;
   margin-bottom: 72px;
@@ -554,7 +755,7 @@ body.modal-open {
 
 .header {
   display: inline-block;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
@@ -563,6 +764,14 @@ body.modal-open {
   color: #B718EF;
   padding-top: 80px;
   margin-bottom: 55px;
+}
+@media screen and (max-width: 767px) {
+  .header {
+    font-size: 24px;
+    line-height: 29px;
+    padding-top: 40px;
+    margin-bottom: 35px;
+  }
 }
 
 .header::after {
@@ -579,7 +788,6 @@ body.modal-open {
   height: 47px;
   border-radius: 50px;
 }
-
 .arrow:focus, .arrow:hover {
   -webkit-box-shadow: 0px 4px 4px rgba(94, 68, 68, 0.25);
           box-shadow: 0px 4px 4px rgba(94, 68, 68, 0.25);
@@ -626,7 +834,7 @@ body.modal-open {
 }
 
 .consultation-format {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -636,7 +844,7 @@ body.modal-open {
 }
 
 .consultation-text {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -688,7 +896,7 @@ body.modal-open {
 }
 
 .appointment-header {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 64px;
@@ -730,7 +938,17 @@ body.modal-open {
 }
 
 ::-webkit-input-placeholder {
-  font-family: 'Roboto';
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #000000;
+}
+
+::-moz-placeholder {
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -740,7 +958,7 @@ body.modal-open {
 }
 
 :-ms-input-placeholder {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -750,7 +968,7 @@ body.modal-open {
 }
 
 ::-ms-input-placeholder {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -760,7 +978,7 @@ body.modal-open {
 }
 
 ::placeholder {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -815,14 +1033,12 @@ body.modal-open {
 .contacts_social-links {
   margin-bottom: 0;
 }
-
 .contacts-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 80px;
 }
-
 .contacts-item_left {
   max-width: 376px;
   padding-left: 27px;
@@ -832,19 +1048,16 @@ body.modal-open {
           box-shadow: 0px 4px 50px rgba(202, 122, 251, 0.4);
   margin-right: 35px;
 }
-
 .contacts-item_right {
   max-width: 1190px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 4px 50px rgba(202, 122, 251, 0.4);
           box-shadow: 0px 4px 50px rgba(202, 122, 251, 0.4);
 }
-
 .contacts-list {
   width: 260px;
   margin-bottom: 58px;
 }
-
 .contacts-list_link {
   font-weight: 400;
   font-size: 24px;
@@ -853,7 +1066,6 @@ body.modal-open {
   text-decoration: none;
   color: #000000;
 }
-
 .contacts-list_item {
   font-weight: 400;
   font-size: 24px;
@@ -862,28 +1074,24 @@ body.modal-open {
   padding-left: 48px;
   position: relative;
 }
-
 .contacts-list_item__place::before {
   content: url(./../images/placeholder.png);
   position: absolute;
   top: 0px;
   left: 0px;
 }
-
 .contacts-list_item__phone::before {
   content: url(./../images/phone.png);
   position: absolute;
   top: 0px;
   left: 0px;
 }
-
 .contacts-list_item__mail::before {
   content: url(./../images/mail.png);
   position: absolute;
   top: 0px;
   left: 0px;
 }
-
 .contacts_map {
   width: 1190px;
   height: 560px;
@@ -904,8 +1112,8 @@ body.modal-open {
 }
 
 .feedback-item {
-  -ms-flex-preferred-size: calc(100% / 2 - 50px);
-      flex-basis: calc(100% / 2 - 50px);
+  -ms-flex-preferred-size: calc(50% - 50px);
+      flex-basis: calc(50% - 50px);
   position: relative;
   margin-right: 50px;
   overflow: hidden;
@@ -935,7 +1143,7 @@ body.modal-open {
   display: block;
   width: 100%;
   height: auto;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -995,7 +1203,7 @@ body.modal-open {
           transform: translateX(-50%);
   text-align: center;
   z-index: 2;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -1016,4 +1224,16 @@ body.modal-open {
   height: 200px;
   bottom: -200px;
 }
-/*# sourceMappingURL=main.css.map */
+
+.burger {
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 24px;
+  margin-left: 60px;
+}
+@media screen and (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */
