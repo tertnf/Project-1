@@ -32,6 +32,7 @@
                 <li class="navigation-item"><a class="link" href="#contacts">Контакти</a></li>
             </ul>
         </nav>
+        <button class="burger"> <img src="./images/svg/burger.svg" alt=""></button>
     </div>
     </header>
 <main>
@@ -72,7 +73,8 @@
         <div class="container background-directions">
             <h2 class="header" id="directions">Напрямки роботи</h2>
     <div class="container-directions">
-        <ul class="directions list">
+        
+        <ul class="directions  list">
             <li class="direction-item">Розвиваючі заняття з дітьми від 2 років</li>
             <li class="direction-item">Пізнавальні заняття</li>
             <li class="direction-item">Творчі заняття</li>
@@ -81,13 +83,20 @@
             <li class="direction-item">Консультування з приводу адаптації дитини до дитячого садочка, школи, труднощі
                 які можуть виникати з цим</li>
         </ul>
-        <img class="directions-picture" src="./images/child-psychologist.png" alt="">
-        <ul class=" directions list">
+        <div class="directions-decor-top"></div>
+        <picture >
+            <source  srcset="./images/child-psychologist.png" media="(min-width: 768px)" type="image/png"/>
+            <source srcset="./images/mobile/mobile-directions-img.png" media="(max-width: 767px)" type="image/png" />
+            <img class="directions-picture" src="./images/child-psychologist.png" width="575px" height="auto"
+                alt="">
+        </picture>
+    <div class="directions-decor-bottom"></div>
+        <ul class=" directions  list">
             <li class="direction-item">Вікові кризи та особливості виховання дітей різного віку</li>
             <li class="direction-item">Заняття із емоційного інтелекту</li>
             <li class="direction-item">Страхи, тривога дитини</li>
             <li class="direction-item">Агресія, агресивна поведінка дитини</li>
-            <li class="direction-item">Замкнутість,невпевненість</li>
+            <li class="direction-item">Замкнутість, невпевненість</li>
             <li class="direction-item">Консультування дорослих, кому потрібна психологічна підтримка та вирішення
                 проблем</li>
         </ul>
@@ -98,15 +107,12 @@
     </section>
     <section class="about-section">
         <div class="container">
-            
+            <h2 class="header" id="about">Про мене</h2>
             <div class="about-wrap">
-                <div class="about-content"> 
-                    <img class="about-img" src="./images/psiholog-ugai.png" alt="">
-<img class="about-decor" src="./images/palms.png" alt="">
-                </div>
+                
                    
-                    <div class="about-description">
-                     <h2 class="header" id="about">Про мене</h2>
+                <div class="about-description">
+                     
                         <article>
                             <p class="about-text">Я — Угай Наталія Іванівна, щаслива жінка, дружина, а ще дипломований психолог, дитячий психолог.
                             З дитинства я помічала скрізь красу, як у людині так і в оточуючому середовищі. Це все згодом перейшло у професійну
@@ -127,22 +133,33 @@
                             Індивідуальний підхід до кожної дитини. Створюю безпечне середовище, де можна бути та проявлятися.
                             </p>
                         </article>
-                    </div>
-                    
                 </div>
+                <div class="about-content">
+                    <picture>
+                        <source srcset="./images/mobile/mobile-about-img.png" media="(max-width:767px)" type="image/png" />
+                        <source srcset="./images/psiholog-ugai.png" media="(min-width: 768px)" type="image/png" />
+                        <img class="about-img" src="./images/psiholog-ugai.png" alt="" width="649px" height="850px">
+                    </picture>
+                
+                    <img class="about-decor" src="./images/palms.png" alt="">
                 <ul class="list counter-list">
                         <li class="counter-list-item">
-                            <p class="counter">1</p>
-                            <p class="counter-description">Рік практикуючий психолог</p>
+                           <div><p class="counter">1</p>
+                        <p class="counter-description">Рік практикуючий психолог</p></div>
                         </li>
                         <li class="counter-list-item">
-                            <p class="counter">2</p>
-                            <p class="counter-description">Вищі освіти</p></li>
+                         <div><p class="counter">2</p>
+                        <p class="counter-description">Вищі освіти</p></div>
+                        </li>
                         <li class="counter-list-item">
-                            <p class="counter">7</p>
-                            <p class="counter-description">Років досвіду роботи з дітьми як керівник творчих заходів, митець</p></li>
-                    </ul>
+                            <div><p class="counter">7</p>
+                            <p class="counter-description">Років досвіду роботи з дітьми як керівник творчих заходів, митець</p></div>
+                        </li>
+                    </ul></div>
+                
             </div>
+                </div>
+            
         </div>
     </section>
     <section class="consultation-section">

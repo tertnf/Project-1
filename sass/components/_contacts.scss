@@ -2,3 +2,9 @@
   color: #0A0909 ;
   margin-right: auto;
 }
+
+.contacts-img{
+  @media screen and (max-width: 767px){
+    display: none;
+  }
+}
