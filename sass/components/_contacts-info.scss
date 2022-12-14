@@ -119,4 +119,12 @@
     }
 }
 
-
+@media (max-width: 320px){
+    .contacts{
+        &-item{
+            &_right{
+                width: 320px;
+            }
+        }
+    }
+}
