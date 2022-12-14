@@ -22,7 +22,13 @@
     line-height: 29px;
 padding-top: 40px;
 margin-bottom: 35px;
-}}
+text-align: center;
+    margin: 0 auto;
+}
+
+
+
+}
 .header::after{
     content: "";
     display: block;
@@ -32,6 +38,17 @@ margin-bottom: 35px;
     margin-top: 10px;
 ;
     
+}
+.page-header-wrap{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .arrow {
@@ -45,3 +62,4 @@ margin-bottom: 35px;
     }
 
 }
+

@@ -1,14 +1,15 @@
+header .page-header-wrap {
+  background-color: #F5E9FB;
+}
 .header .container{
   
   position:relative;
  z-index: 1;
     outline: 5px solid blue;
 }
-.header-wrap{
-    display: flex;
-    background-color: #F5E9FB;
-        padding-top: 57px;
-        align-items: center;
+.page-header-wrap{
+   padding-top: 57px;
+      
         
 @media screen and (max-width:767px){
   padding-top: 42px;

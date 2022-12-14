@@ -90,6 +90,7 @@ img {
 }
 
 .about-img {
+  margin-top: -124px;
   margin-bottom: 17px;
   max-width: 618px;
   margin-right: 31px;
@@ -97,6 +98,7 @@ img {
 @media screen and (max-width: 767px) {
   .about-img {
     padding-top: 32px;
+    max-width: 333px;
   }
 }
 
@@ -145,6 +147,9 @@ img {
           justify-content: center;
 }
 
+.about-section .header {
+  margin-left: 65%;
+}
 @media screen and (max-width: 767px) {
   .about-section .header {
     margin-left: auto;
@@ -164,7 +169,7 @@ img {
 
 .about-decor {
   position: absolute;
-  top: 606px;
+  top: 482px;
   right: 25px;
   width: 256px;
 }
@@ -174,24 +179,21 @@ img {
   }
 }
 
+header .page-header-wrap {
+  background-color: #F5E9FB;
+}
+
 .header .container {
   position: relative;
   z-index: 1;
   outline: 5px solid blue;
 }
 
-.header-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #F5E9FB;
+.page-header-wrap {
   padding-top: 57px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 @media screen and (max-width: 767px) {
-  .header-wrap {
+  .page-header-wrap {
     padding-top: 42px;
   }
 }
@@ -330,6 +332,11 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 237px;
   height: 70px;
   border-radius: 50px;
@@ -484,6 +491,7 @@ section {
     width: 811px;
     margin-left: auto;
     margin-right: auto;
+    background-position: center;
   }
 }
 
@@ -493,6 +501,12 @@ section {
 
 .hero-content {
   z-index: 20;
+}
+@media screen and (max-width: 767px) {
+  .hero-content {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 h1 {
@@ -771,6 +785,8 @@ body.modal-open {
     line-height: 29px;
     padding-top: 40px;
     margin-bottom: 35px;
+    text-align: center;
+    margin: 0 auto;
   }
 }
 
@@ -781,6 +797,26 @@ body.modal-open {
   height: 3px;
   background-color: #BD3CEB;
   margin-top: 10px;
+}
+
+.page-header-wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .arrow {
@@ -803,14 +839,17 @@ body.modal-open {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  margin-right: -40px;
+}
+@media screen and (max-width: 767px) {
+  .consultation-list {
+    display: block;
+  }
 }
 
 .consultation-item {
   margin-right: 40px;
-}
-
-.consultation-list {
-  margin-right: -40px;
+  position: relative;
 }
 
 .consultation-decor {
@@ -821,6 +860,11 @@ body.modal-open {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
+}
+@media screen and (max-width: 767px) {
+  .consultation-decor {
+    display: none;
+  }
 }
 
 .decor-left {
@@ -842,6 +886,14 @@ body.modal-open {
   color: #000000;
   margin-bottom: 15px;
 }
+@media screen and (max-width: 767px) {
+  .consultation-format {
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+  }
+}
 
 .consultation-text {
   font-family: "Roboto";
@@ -852,6 +904,12 @@ body.modal-open {
   color: #000000;
   display: inline-block;
 }
+@media screen and (max-width: 767px) {
+  .consultation-text {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
 
 .consultation-list :first-child .consultation-block:before {
   content: "";
@@ -860,6 +918,15 @@ body.modal-open {
   background-image: url(./../images/location.png);
   display: block;
   margin-bottom: 21px;
+}
+@media screen and (max-width: 767px) {
+  .consultation-list :first-child .consultation-block:before {
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    position: absolute;
+    left: -35px;
+  }
 }
 
 .consultation-list :last-child .consultation-block:before {
@@ -870,11 +937,26 @@ body.modal-open {
   display: block;
   margin-bottom: 21px;
 }
+@media screen and (max-width: 767px) {
+  .consultation-list :last-child .consultation-block:before {
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    position: absolute;
+    left: -35px;
+  }
+}
 
 .consultation-block {
   position: absolute;
   bottom: 50px;
   margin-left: 50px;
+}
+@media screen and (max-width: 767px) {
+  .consultation-block {
+    width: 235px;
+    margin-left: 70px;
+  }
 }
 
 .consultation-item:hover .consultation-block:before {
@@ -886,13 +968,31 @@ body.modal-open {
 .consultation-section .container {
   padding-bottom: 117px;
 }
+@media screen and (max-width: 767px) {
+  .consultation-section .container {
+    padding-bottom: 14px;
+  }
+}
 
+@media screen and (max-width: 767px) {
+  .consultation-section .header::after {
+    width: 77%;
+    margin-left: 20px;
+  }
+}
 .appointment-button {
   width: 260px;
   height: 65px;
   background: linear-gradient(94.38deg, #B33EFB -3.82%, #391FD9 99.49%);
   border-radius: 50px;
   border-style: hidden;
+}
+@media screen and (max-width: 767px) {
+  .appointment-button {
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .appointment-header {
@@ -905,6 +1005,15 @@ body.modal-open {
   color: #FFFFFF;
   text-align: center;
 }
+@media screen and (max-width: 767px) {
+  .appointment-header {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    width: 230px;
+  }
+}
 
 .appointment-bg {
   background-image: url(../../images/apointment-bg.png), linear-gradient(91.75deg, #A035F4 0.46%, #C688F6 100%);
@@ -916,8 +1025,19 @@ body.modal-open {
   max-height: 381px;
   text-align: center;
 }
+@media screen and (max-width: 767px) {
+  .appointment-bg {
+    background-image: url(./../images/mobile/mobile-appointment-decor.png);
+    max-width: 374px;
+    max-height: 477px;
+    background-color: #C483F5;
+    padding-bottom: 59px;
+  }
+}
 
 .input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 424px;
   height: 65px;
   background: #FFFFFF;
@@ -927,16 +1047,47 @@ body.modal-open {
   border-style: hidden;
   padding-left: 45px;
 }
+@media screen and (max-width: 767px) {
+  .input {
+    width: 302px;
+    height: 55px;
+    padding-left: 32px;
+  }
+}
 
-.inputs :not(:last-child) {
-  margin-right: 63px;
+@media screen and (min-width: 768px) {
+  .inputs :not(:last-child) {
+    margin-right: 63px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .inputs :not(:last-child) {
+    margin-bottom: 50px;
+  }
 }
 
 .inputs {
   display: inline-block;
   margin-right: 150px;
 }
+@media screen and (max-width: 767px) {
+  .inputs {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 65px;
+  }
+}
 
+@media screen and (min-width: 767px) {
+  .appointment-wrap {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 ::-webkit-input-placeholder {
   font-family: "Roboto";
   font-style: normal;
@@ -946,7 +1097,6 @@ body.modal-open {
   /* identical to box height */
   color: #000000;
 }
-
 ::-moz-placeholder {
   font-family: "Roboto";
   font-style: normal;
@@ -956,7 +1106,6 @@ body.modal-open {
   /* identical to box height */
   color: #000000;
 }
-
 :-ms-input-placeholder {
   font-family: "Roboto";
   font-style: normal;
@@ -966,7 +1115,6 @@ body.modal-open {
   /* identical to box height */
   color: #000000;
 }
-
 ::-ms-input-placeholder {
   font-family: "Roboto";
   font-style: normal;
@@ -976,7 +1124,6 @@ body.modal-open {
   /* identical to box height */
   color: #000000;
 }
-
 ::placeholder {
   font-family: "Roboto";
   font-style: normal;
@@ -985,6 +1132,23 @@ body.modal-open {
   line-height: 21px;
   /* identical to box height */
   color: #000000;
+}
+@media screen and (max-width: 767px) {
+  ::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  ::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  :-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  ::-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  ::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+  }
 }
 
 .appointment-section .header::after {
@@ -1028,6 +1192,12 @@ body.modal-open {
 
 .qualification-section .header::after {
   width: 46%;
+}
+@media screen and (max-width: 767px) {
+  .qualification-section .header::after {
+    width: 70%;
+    margin-left: 20px;
+  }
 }
 
 .contacts_social-links {
@@ -1103,6 +1273,7 @@ body.modal-open {
 
 .feedback-section .header {
   color: #ffffff;
+  margin-bottom: 35px;
 }
 
 .feedback {
@@ -1110,13 +1281,43 @@ body.modal-open {
   height: 380px;
   padding: 12px 15px 55px 25px;
 }
+@media screen and (max-width: 767px) {
+  @supports (scrollbar-gutter: stable) {
+    .feedback {
+      overflow-y: auto;
+      -webkit-overflow-scrolling-y: touch;
+      scrollbar-gutter: stable;
+    }
+  }
+  .feedback ::-webkit-scrollbar {
+    width: 25px;
+  }
+  .feedback ::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    border-radius: 50px;
+  }
+  .feedback ::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(91.75deg, #A035F4 0.46%, #C688F6 100%);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+  }
+}
 
 .feedback-item {
-  -ms-flex-preferred-size: calc(50% - 50px);
-      flex-basis: calc(50% - 50px);
+  min-width: 900px;
+  height: 380px;
   position: relative;
   margin-right: 50px;
-  overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  .feedback-item {
+    min-width: 300px;
+    margin-right: 20px;
+    margin-left: 20px;
+    scrollbar-width: thin;
+    scrollbar-color: #6969dd #C460FF;
+  }
 }
 
 .feedback-bg {
@@ -1132,16 +1333,22 @@ body.modal-open {
   display: -ms-flexbox;
   display: flex;
   margin-right: -50px;
-  margin-bottom: 50px;
+  margin-bottom: 36px;
+  overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  .feedbacks {
+    margin-top: 35px;
+  }
 }
 
 .feedback-section .container {
-  padding-bottom: 94px;
+  padding-bottom: 48px;
 }
 
 .feedback-text {
   display: block;
-  width: 100%;
+  width: auto;
   height: auto;
   font-family: "Roboto";
   font-style: normal;
@@ -1149,6 +1356,20 @@ body.modal-open {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
+}
+@media screen and (max-width: 767px) {
+  .feedback-text {
+    width: 100%;
+    height: 144px;
+    overflow-y: scroll;
+    padding-right: 23px;
+  }
+  @supports (scrollbar-gutter: stable) {
+    .feedback-text {
+      overflow-y: auto;
+      scrollbar-gutter: stable;
+    }
+  }
 }
 
 .feedback::before {
@@ -1180,6 +1401,14 @@ body.modal-open {
   margin-right: auto;
   z-index: 2;
 }
+@media screen and (max-width: 767px) {
+  .feedback-img {
+    height: 80px;
+    width: 80px;
+    bottom: 65px;
+    max-width: unset !important;
+  }
+}
 
 .feedback-wrap {
   margin-right: 41px;
@@ -1193,6 +1422,12 @@ body.modal-open {
 .feedback-section .header::after {
   background-color: #ffffff;
   width: 65%;
+}
+@media screen and (max-width: 767px) {
+  .feedback-section .header::after {
+    width: 70%;
+    margin-left: 15px;
+  }
 }
 
 .feedback-person {
@@ -1211,18 +1446,22 @@ body.modal-open {
   text-align: center;
   color: #FFFFFF;
 }
+@media screen and (max-width: 767px) {
+  .feedback-person {
+    width: 125px;
+  }
+}
 
 .feedback-design {
   position: absolute;
-  bottom: 0px;
   width: 100%;
+  bottom: -222px;
 }
-
-.feedback-design-wrap {
-  position: absolute;
-  width: 100%;
-  height: 200px;
-  bottom: -200px;
+@media screen and (max-width: 767px) {
+  .feedback-design {
+    bottom: 0px;
+    overflow: unset;
+  }
 }
 
 .burger {

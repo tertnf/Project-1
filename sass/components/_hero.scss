@@ -89,6 +89,8 @@ font-family: 'Montserrat';
 
 .button{
     display: flex;
+    box-sizing: border-box;
+    justify-content: center;
     width: 237px;
     height: 70px; 
     border-radius: 50px;   
@@ -263,6 +265,7 @@ margin-right: 33px;
                             width: 811px;
                            margin-left: auto;
                            margin-right: auto;
+                        background-position: center;
                     }
 }
 .contacts{
@@ -271,6 +274,10 @@ margin-right: 33px;
 }
 .hero-content{
  z-index: 20;
+ @media screen and (max-width:767px){
+    margin-left: auto;
+margin-right: auto;
+ }
 
 
 }
