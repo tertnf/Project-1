@@ -6,10 +6,56 @@
     margin-right: auto;
     max-width: 1920px;
     // outline: solid 2px red;
+}
+
+
+@media (max-width: 1150px){
+    .container{
+        padding-left: 120px;
+        padding-right: 120px;
+    } 
+}
+
+@media (max-width: 1100px){
+    .container{
+        padding-left: 100px;
+        padding-right: 100px;
+    } 
+}
+
+@media (max-width: 950px){
+    .container{
+        padding-left: 80px;
+        padding-right: 80px;
+    } 
+}
+
+@media (max-width: 900px){
+    .container{
+        padding-left: 50px;
+        padding-right: 50px;
+    } 
+}
+
+@media (max-width: 800px){
+    .container{
+        padding-left: 40px;
+        padding-right: 40px;
+    } 
+}
+
+@media (max-width: 374px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    } 
+}
 
     @media screen and (max-width:767px){
-        padding-left: 20px;
+        .container{
+            padding-left: 20px;
             padding-right: 20px;
             max-width: 727px;
-    }
+        } 
 }
+

@@ -1,7 +1,3 @@
-// .page-footer .container{
-//     background-color: #F5E9FB;
-// }
-
 .page-footer{
     position: relative;
     font-weight: 400;
@@ -38,6 +34,10 @@
     &_logo{
         margin-right: 212px;
     }
+    &_img{
+        max-width: 59px;
+        max-height: 51px;
+    }
     &_social-links{
         margin-top: 38px;
         margin-bottom: 72px;
@@ -58,4 +58,249 @@
     bottom: 109px;
     left: -220px;
     cursor: pointer;
+}
+
+.arrow-up_media{
+    display: none;
+}
+
+@media (max-width: 1850px){
+  
+    .page-footer{
+        &_items{
+            &__position{
+                margin-right: 170px;
+            }
+            &-wrap{
+                margin-left: 280px;
+            }
+        }
+        &_logo{
+            margin-right: 180px;
+        }
+    }
+
+    .arrow-up{
+        left: -200px;
+    }
+}
+
+
+@media (max-width: 1700px){
+  
+    .page-footer{
+        &_items{
+            &__position{
+                margin-right: 160px;
+            }
+            &-wrap{
+                margin-left: 250px;
+            }
+        }
+        &_logo{
+            margin-right: 130px;
+        }
+    }
+
+    .arrow-up{
+        left: -180px;
+    }
+}
+
+
+
+@media (max-width: 1550px){
+  
+    .page-footer{
+        &_items{
+            &__position{
+                margin-right: 150px;
+            }
+            &-wrap{
+                margin-left: 220px;
+            }
+        }
+        &_logo{
+            margin-right: 90px;
+        }
+    }
+
+    .arrow-up{
+        left: -160px;
+    }
+}
+
+@media (max-width: 1450px){
+  
+    .page-footer{
+        &_items{
+            &__position{
+                margin-right: 100px;
+            }
+            &-wrap{
+                margin-left: 200px;
+            }
+        }
+        &_logo{
+            margin-right: 100px;
+        }
+    }
+    
+    .arrow-up{
+        left: -140px;
+    }
+}
+
+@media (max-width: 1350px){
+  
+    .page-footer{
+        &_items{
+            &__position{
+                margin-right: 80px;
+            }
+            &-wrap{
+                margin-left: 180px;
+            }
+        }
+        &_logo{
+            margin-right: 80px;
+        }
+    }
+
+    .arrow-up{
+        left: -120px;
+    }
+}
+
+
+@media (max-width: 1350px){
+  
+    .page-footer{
+        font-size: 18px;
+        &_item{
+            margin-bottom: 25px;
+        }
+        &_items{
+            &__position{
+                margin-right: 55px;
+            }
+            &-wrap{
+                margin-left: 150px;
+            }
+        }
+        &_logo{
+            margin-right: 80px;
+        }
+    }
+
+    .arrow-up{
+        left: -100px;
+    }
+}
+
+@media (max-width: 1050px){
+  
+    .page-footer{
+        &_item{
+            margin-bottom: 20px;
+        }
+        &_items{
+            &__position{
+                margin-right: 50px;
+            }
+            &-wrap{
+                margin-left: 120px;
+            }
+        }
+        &_logo{
+            margin-right: 60px;
+        }
+    }
+
+    .arrow-up{
+        left: -80px;
+    }
+}
+
+@media (max-width: 970px){
+  
+    .page-footer{
+        &_items{
+            &__position{
+                margin-right: 35px;
+            }
+            &-wrap{
+                margin-left: 70px;
+            }
+        }
+        &_logo{
+            margin-right: 35px;
+        }
+    }
+
+    .arrow-up{
+        left: -70px;
+    }
+}
+
+@media (max-width: 750px){
+  
+    .page-footer{
+        &_items{
+            &__position{
+                margin-right: 30px;
+            }
+            &-wrap{
+                margin-left: 50px;
+            }
+        }
+        &_logo{
+            margin-right: 30px;
+        }
+        &_img{
+            max-width: 51px;
+            max-height: 44px;
+        }
+    }
+
+    .arrow-up{
+        left: -50px;
+    }
+}
+
+
+
+@media (max-width: 700px){
+  
+    .page-footer{
+        &_wrapper{
+            flex-direction: column;
+        }
+        &_list{
+            flex-direction: column;
+        }
+        &_logo{
+            margin-bottom: 46px;
+        }
+        &_items{
+            &-wrap{
+                margin-left: 0;
+            }
+        }
+    }
+
+    .arrow-up{
+        display: none;
+    }
+
+    .arrow-up_media{
+        display: block;
+        position: absolute;
+        bottom: 34px;
+        right: 44px;
+    }
+
+    .privacy{
+        bottom: 24px;
+    }
 }
