@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <div class="container page-header-wrap">
+        <div class="container header-wrap">
         <a class="logo" href="./index.html"><img src="./images/logo.png" alt=""></a>
         <ul class="contacts list">
             <li><a class="link contacts-item" href="tel:+380681825627"><img class="contacts-img" src="./images/phone.png" alt="">+380681825627</a></li>
@@ -71,7 +71,7 @@
     <section class="direction-section">
     
         <div class="container background-directions">
-            <div class="header-wrap"><h2 class="header" id="directions">Напрямки роботи</h2></div>
+            <h2 class="header" id="directions">Напрямки роботи</h2>
     <div class="container-directions">
         
         <ul class="directions  list">
@@ -107,7 +107,7 @@
     </section>
     <section class="about-section">
         <div class="container">
-            <div class="header-wrap"><h2 class="header" id="about">Про мене</h2></div>
+            <h2 class="header" id="about">Про мене</h2>
             <div class="about-wrap">
                 
                    
@@ -164,15 +164,11 @@
     </section>
     <section class="consultation-section">
         <div class="container">
-        <div class="header-wrap"><h2 class="header" id="consultation">Консультації</h2></div>
+        <h2 class="header" id="consultation">Консультації</h2>
         <ul class="list consultation-list">
             <li class="consultation-item">
                 <div class="consultation-decor decor-left"></div>
-                <picture>
-                    <source srcset="./images/mobile/mobile-psihologist-dnipro.png" media="(max-width:767px)" type="image/png"/>
-                    <source srcset="./images/psihologist-dnipro.jpg" media="(min-width:768px)" type="image/png"/>
-                    <img class="consultation-img" src="./images/psihologist-dnipro.jpg" alt=""></picture>
-                
+                <img class="consultation-img" src="./images/psihologist-dnipro.jpg" alt="">
                 <div class="consultation-block">
                 <p class="consultation-format">Офлайн Консультація</p>
                 <p class="consultation-text">Проводиться за адресою:&ensp;<address class="consultation-text">м. Дніпро, вул. Шевченко 10</address></p>
@@ -180,11 +176,7 @@
             </li>
             <li class="consultation-item">
                 <div class="consultation-decor decor-right"></div>
-                <picture>
-                    <source srcset="./images/mobile/mobile-psihologist-online.png" media="(max-width:767px)" type="image/png"/>
-                    <source srcset="./images/psihologist-online.jpg" media="(min-width:768px)" type="image/png" />
-                    <img class="consultation-img" src="./images/psihologist-online.jpg" alt=""></picture>
-                
+                <img class="consultation-img" src="./images/psihologist-online.jpg" alt="">
                 <div class="consultation-block"><p class="consultation-format">Онлайн Консультація</p>
                 <p class="consultation-text">Проводиться по телефону або за допомогою відеозв'язку</p></div>
             </li>
@@ -193,19 +185,17 @@
     </section>
     <section class="appointment-section">
         <div class="container appointment-bg"><h2 class="header appointment-header" id="appointment">Записатися на консультацію</h2>
-            <div class="appointment-wrap">
-                <div class="inputs">
-                    <input class="input" type="text" id="name" placeholder="Ім'я">
-                    <input class="input" type="text" id="tel" placeholder="Телефон">
-                </div>
-                <button class="button appointment-button" type="submit">Записатися</button>
+            <div class="inputs"> 
+                <input class="input" type="text" id="name" placeholder="Ім'я">
+                <input class="input" type="text" id="tel" placeholder="Телефон">
             </div>
+            <button class="button appointment-button" type="submit">Записатися</button>
         </div>
     </section>
     
     <section class="qualification-section">
 
-    <div class="container"><div class="header-wrap"><h2 class="header" id="qualification">Кваліфікация</h2></div>
+    <div class="container"><h2 class="header" id="qualification">Кваліфікация</h2>
     <ul class="qualification-list list">
        
         <li class="qualification-item"><img class ="qualification-img" src="./images/playback.JPG" alt="">
@@ -235,12 +225,11 @@
 </div>
 </section>
 
-
 <section class="feedback-section">
     <div class="container feedback-bg">
-    <div class="header-wrap"><h2 class="header" id="feedback">Відгуки</h2></div>
+    <h2 class="header" id="feedback">Відгуки</h2>
     <ul class="list feedbacks">
-         <li class="feedback-item">
+        <!-- <li class="feedback-item">
             <div class="feedback">
                 <div class="feedback-text">
                     <p>Рекомендую Наталію, як прекрасного педагога в роботі з дітками. Марія с задоволенням ходила на дитячій плейбек, та
@@ -251,15 +240,9 @@
                 <img class="feedback-img" src="./images/anastasia-k.jpg" alt="">
                 <p class="feedback-person" lang="en">Anastasia Kopytko</p>
             </div>
-            
-                <picture>
-                    <source srcset="./images/svg/mobile-feedback-design.svg" media="(max-width:767px)" type="image/svg" width="300" heigth="133"/>
-                    <source srcset="./images/svg/feedback-design.svg" media="(min-width:768px)" type="image/svg"  width="512" heigth="148" />
-                    <img class="feedback-design" src="./images/svg/mobile-feedback-design.svg" alt="">
-                </picture> 
-            
-        </li>  
-         <li class="feedback-item">
+            <img class="feedback-design" src="/images/feedback-design.png" alt="">
+        </li>  -->
+        <!-- <li class="feedback-item">
             <div class="feedback">
                 <div class="feedback-text">
                     <p lang="ru">Знаете ли вы на сколько тело чувствительно, отзывчиво, мудро и служит жизни? 
@@ -271,19 +254,8 @@
                 <img class ="feedback-img" src="./images/vlada-k.jpg" alt="">
                 <p class="feedback-person" lang="ru">Влада Кацаран</p>
                 </div>
-           
-                    
-                        <picture>
-                            <source srcset="./images/svg/mobile-feedback-design.svg" media="(max-width:767px)" type="image/svg" width="300"
-                                heigth="133" />
-                            <source srcset="./images/svg/feedback-design.svg" media="(min-width:768px)" type="image/svg" width="512"
-                                heigth="148" />
-                            <img class="feedback-design" src="./images/svg/mobile-feedback-design.svg" alt="">
-                        </picture>
-               
-                
-               
-        </li> 
+                <img class="feedback-design" src="/images/feedback-design.png" alt="">
+        </li> -->
         <li class="feedback-item">
             <div class="feedback">
                 <div class="feedback-text">
@@ -297,16 +269,7 @@
                 <img class="feedback-img" src="./images/tert-n.jpg" alt="">
                 <p class="feedback-person" lang="en">Nataliia Tertyshna</p>
             </div>
-            <!-- <div class="feedback-design-wrap"> -->
-                <picture>
-                    <source srcset="./images/svg/mobile-feedback-design.svg" media="(max-width:767px)" type="image/svg" width="300"
-                        heigth="133" />
-                    <source srcset="./images/svg/feedback-design.svg" media="(min-width:768px)" type="image/svg" width="512"
-                        heigth="148" />
-                    <img class="feedback-design" src="./images/svg/mobile-feedback-design.svg" alt="">
-                </picture>
-                
-            <!-- </div> -->
+            <div class="feedback-design-wrap"><img class="feedback-design" src="/images/feedback-design.svg" alt="">
         </li>
         <li class="feedback-item">
             <div class="feedback">
@@ -324,17 +287,8 @@
                 
                 <p class="feedback-person">Качура Олена</p>
             </div>
-            <!-- <div class="feedback-design-wrap"> -->
-            <picture>
-                <source srcset="./images/svg/mobile-feedback-design.svg" media="(max-width:767px)" type="image/svg" width="300"
-                    heigth="133" />
-                <source srcset="./images/svg/feedback-design.svg" media="(min-width:768px)" type="image/svg" width="512"
-                    heigth="148" />
-                <img class="feedback-design" src="./images/svg/mobile-feedback-design.svg" alt="">
-            </picture>
-            
-            <!-- </div> -->
-        </li>  
+            <div class="feedback-design-wrap"><img class="feedback-design" src="/images/feedback-design.svg" alt=""></div>
+        </li> 
     </ul>
     <ul class="arrows list">
         <li class="arrow" > <svg width="70" height="47">
@@ -345,7 +299,7 @@
     </div>
 </section> 
 
- <section class="contacts-info">
+<section class="contacts-info">
     <div class="container">
         <div class="contacts-items">
             <div class="contacts-item contacts-item_left">
@@ -371,7 +325,7 @@
         </div>
     </div>
 
-</section> 
+</section>
 
 </main>
 <footer class="page-footer">
@@ -418,7 +372,7 @@
             <a href=""><img src="./images/arrow-up.png" alt=""></a>
         </div>
     </div>
-</footer> 
+</footer>
 </body>
 
 </html>
