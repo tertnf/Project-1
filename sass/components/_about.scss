@@ -78,7 +78,7 @@ font-family: 'Roboto';
 background-color: #F5E9FB;}
 
 .about-img{
-    
+    margin-top: -124px;
     margin-bottom: 17px;
     max-width: 618px;
     
@@ -86,6 +86,7 @@ background-color: #F5E9FB;}
 
     @media screen and (max-width:767px) {
         padding-top: 32px;
+        max-width: 333px;
     }
 }
 
@@ -126,6 +127,7 @@ background-color: #F5E9FB;}
 .about-section .header{
   
     // text-align: left;
+    margin-left: 65%;
     @media screen and (max-width:767px) {
         // text-align: center;
 
@@ -144,7 +146,7 @@ background-color: #F5E9FB;}
 
 .about-decor{
     position: absolute;
-    top: 606px;
+    top: 482px;
     right: 25px;
     width: 256px;
 

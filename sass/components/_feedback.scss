@@ -1,5 +1,6 @@
 .feedback-section .header{
     color: #ffffff;
+    margin-bottom: 35px;
 }
 .feedback{
     
@@ -12,7 +13,39 @@
     padding: 12px 15px 55px 25px;
     
     
-  
+  @media screen and (max-width:767px){
+    @supports (scrollbar-gutter: stable) {
+                overflow-y:auto;
+                -webkit-overflow-scrolling-y: touch;
+                scrollbar-gutter: stable;
+            }
+                     ::-webkit-scrollbar {
+                         width: 25px; 
+    
+    
+    
+                     }
+    
+                     ::-webkit-scrollbar-track {
+                        //  background-color: #C460FF;
+                        background-color: #ffffff;
+    
+                        border-radius: 50px;
+    
+    
+    
+    
+                     }
+    
+                     ::-webkit-scrollbar-thumb {
+                         background-image: linear-gradient(91.75deg,
+                                 #A035F4 0.46%,
+                                 #C688F6 100%);
+                         box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                         border-radius: 50px;
+    
+                     }
+  }
     
     // @supports (scrollbar-gutter: stable) {
     //         overflow-y: auto;
@@ -48,13 +81,26 @@
 }
 
 .feedback-item {
-    flex-basis: calc(100% / 2 - 50px);
-       
+    // flex-basis: calc(100% / 2 - 50px);
+    min-width: 900px;
+  height: 380px;
     position: relative;
      margin-right: 50px;
-    overflow: hidden;
+   
+      
+      
+    // overflow: scroll;
 //     scrollbar-width: thin;
 //    scrollbar-color: #6969dd #C460FF;
+
+@media screen and (max-width:767px){
+    // overflow-x: scroll;
+    min-width: 300px;
+    margin-right: 20px;
+    margin-left: 20px;
+    scrollbar-width: thin;
+           scrollbar-color: #6969dd #C460FF;
+}
 }
 
 .feedback-bg{
@@ -74,19 +120,36 @@
 
 .feedbacks{
     display: flex;
+    
     margin-right: -50px;
-    margin-bottom: 50px;
+    margin-bottom: 36px;
+    overflow: hidden;
+    
+       
+    @media screen and (max-width: 767px) {
+        margin-top: 35px;
+        // overflow: hidden;
+    }
 }
 
 .feedback-section .container{
-    padding-bottom: 94px;
+    padding-bottom: 48px;
 }
 
 .feedback-text{
  display: block;
-    width: 100%;
+    // width: 100%;
+    width: auto;
     height: auto;
-   
+   @media screen and (max-width:767px){
+    width: 100%;
+        height: 144px;
+    overflow-y: scroll;
+        padding-right: 23px;
+        @supports (scrollbar-gutter: stable) {
+                overflow-y: auto;
+                scrollbar-gutter: stable;
+   }}
 // overflow-y: scroll;
 // padding-right: 23px;
 // @supports (scrollbar-gutter: stable) {
@@ -130,7 +193,12 @@
    margin-left: auto;
    margin-right: auto;
    z-index: 2;
-
+ @media screen and (max-width:767px){
+    height: 80px;
+    width: 80px;
+    bottom: 65px;
+    max-width:unset!important;
+ }
 }
 
 .feedback-wrap{
@@ -149,6 +217,11 @@
 .feedback-section .header::after{
     background-color: #ffffff;
     width: 65%;
+
+    @media screen and (max-width:767px){
+            width: 70%;
+            margin-left: 15px;
+    }
 }
 
 
@@ -168,22 +241,35 @@ font-family: 'Roboto';
     text-align: center;
 
     color: #FFFFFF;
+    @media screen and (max-width: 767px) {
+        width: 125px;
+    }
 }
 
 .feedback-design{
-    position: absolute;
-  bottom: 0px;
- width: 100%;
-
- 
-
-}
-
-.feedback-design-wrap{
+    // box-sizing: border-box;
     position: absolute;
     width: 100%;
-    height: 200px;
-    
-    bottom: -200px;
-    
+  bottom: -222px;
+//  width: 100%;
+// height: auto;
+ @media screen and (max-width:767px){
+    bottom: 0px;
+    overflow: unset;
+    // height: auto;
+ }
+
 }
+
+// .feedback-design-wrap{
+//     position: absolute;
+//     width: 100%;
+//     height: 200px;
+    
+//     bottom: -200px;
+//     @media screen and (max-width:767px) {
+//     bottom: 0px;
+    
+   
+//     }
+// }

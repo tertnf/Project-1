@@ -26,6 +26,11 @@
 
 .qualification-section .header::after{
     width: 46%;
+    @media screen and (max-width: 767px) {
+            width: 70%;
+            margin-left: 20px;
+            
+    }
 }
 
 // slider

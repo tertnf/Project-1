@@ -4,6 +4,13 @@
         background: linear-gradient(94.38deg, #B33EFB -3.82%, #391FD9 99.49%);
             border-radius: 50px;
             border-style: hidden;
+
+            @media screen and (max-width: 767px) {
+                color: #FFFFFF;
+                margin-left: auto;
+                margin-right: auto;
+                
+            }
             
 }
 .appointment-header{
@@ -17,6 +24,15 @@
     
         color: #FFFFFF;
         text-align: center;
+        @media screen and (max-width: 767px){
+            
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 29px;
+                text-align: center;
+            
+                width: 230px;
+        }
 }
 
 
@@ -28,9 +44,18 @@
         display: block;
         max-width: 1920px;
         max-height: 381px;
-    text-align: center;}
+    text-align: center;
+@media screen and (max-width:767px){
+    background-image: url(./../images/mobile/mobile-appointment-decor.png);
+    max-width: 374px;
+        max-height: 477px;
+        background-color: #C483F5;
+        padding-bottom: 59px;
+}
+}
 
         .input{
+            box-sizing: border-box;
             width: 424px;
                 height: 65px;
                 background: #FFFFFF;
@@ -38,16 +63,41 @@
                     border-radius: 50px;
                     border-style: hidden;
                     padding-left: 45px;
+                    @media screen and (max-width:767px) {
+                        width: 302px;
+                        height: 55px;
+                        padding-left: 32px;
+                    }
         }
-
+  
         .inputs :not(:last-child){
-            margin-right: 63px;
+             @media screen and (min-width:768px){margin-right: 63px;
             
         }
+                        @media screen and (max-width:767px) {
+                            margin-bottom: 50px;
+            
+                        }
+    }
         .inputs{
             display: inline-block;
             margin-right: 150px;
+            @media screen and (max-width:767px){
+          
+                margin-top: 40px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 65px;
+            }
         }
+@media screen and (min-width: 767px) {
+  .appointment-wrap{
+            display: inline-flex;
+            margin-left: auto;
+            margin-right: auto;
+        }   
+}
+       
 
         ::placeholder{
             
@@ -60,8 +110,13 @@
             
             
                 color: #000000;
+                @media screen and (max-width:767px){
+                    color: rgba(0, 0, 0, 0.5);
+                }
         }
 
         .appointment-section .header::after{
             display: none;
         }
+
+    
