@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="./css/main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,9 +64,7 @@
                         </svg></a></li>
                     </ul>
                 </div>
-                <div class="foto-frame">
-                    <!-- <img class = "hero-foto" src="./images/ugai.png" alt="Наталія Угай">    -->
-                </div>
+                 <div class="foto-frame"></div> 
             </div>
 
     </hero>
@@ -225,11 +225,20 @@
 </div>
 </section>
 
-<section class="feedback-section">
+<section class="feedback-section ">
     <div class="container feedback-bg">
     <h2 class="header" id="feedback">Відгуки</h2>
+    <!-- <div class="slider feedback-items">
+        <ul>
+            <li><img src="./images." alt=""></li>
+            <li><img src="./images/tert-n.jpg" alt=""></li>
+        </ul>
+        
+        
+    </div> -->
+    
     <ul class="list feedbacks">
-        <!-- <li class="feedback-item">
+         <li class="feedback-item ">
             <div class="feedback">
                 <div class="feedback-text">
                     <p>Рекомендую Наталію, як прекрасного педагога в роботі з дітками. Марія с задоволенням ходила на дитячій плейбек, та
@@ -240,9 +249,9 @@
                 <img class="feedback-img" src="./images/anastasia-k.jpg" alt="">
                 <p class="feedback-person" lang="en">Anastasia Kopytko</p>
             </div>
-            <img class="feedback-design" src="/images/feedback-design.png" alt="">
-        </li>  -->
-        <!-- <li class="feedback-item">
+            <img class="feedback-design" src="/images/feedback-design.svg" alt="">
+        </li>  
+        <li class="feedback-item ">
             <div class="feedback">
                 <div class="feedback-text">
                     <p lang="ru">Знаете ли вы на сколько тело чувствительно, отзывчиво, мудро и служит жизни? 
@@ -254,9 +263,9 @@
                 <img class ="feedback-img" src="./images/vlada-k.jpg" alt="">
                 <p class="feedback-person" lang="ru">Влада Кацаран</p>
                 </div>
-                <img class="feedback-design" src="/images/feedback-design.png" alt="">
-        </li> -->
-        <li class="feedback-item">
+                <div class="feedback-design-wrap"><img class="feedback-design" src="/images/feedback-design.svg" alt=""></div>
+        </li> 
+        <li class="feedback-item ">
             <div class="feedback">
                 <div class="feedback-text">
                     <p>Хочу поділитися враженнями від роботи з Наталією Угай, як з психологом. Ми почали працювати з нею коли я переживала
@@ -269,9 +278,9 @@
                 <img class="feedback-img" src="./images/tert-n.jpg" alt="">
                 <p class="feedback-person" lang="en">Nataliia Tertyshna</p>
             </div>
-            <div class="feedback-design-wrap"><img class="feedback-design" src="/images/feedback-design.svg" alt="">
+            <img class="feedback-design" src="/images/feedback-design.svg" alt="">
         </li>
-        <li class="feedback-item">
+        <li class="feedback-item ">
             <div class="feedback">
                 <div class="feedback-text">
                     <p>Рекомендую Наталію, як професіонала своєї справи. Наталя у нас у сім'ї працювала нянею для малюка в перші роки життя
@@ -287,15 +296,17 @@
                 
                 <p class="feedback-person">Качура Олена</p>
             </div>
-            <div class="feedback-design-wrap"><img class="feedback-design" src="/images/feedback-design.svg" alt=""></div>
+            <img class="feedback-design" src="/images/feedback-design.svg" alt="">
         </li> 
     </ul>
-    <ul class="arrows list">
-        <li class="arrow" > <svg width="70" height="47">
+    <!-- <ul class="arrows list">
+        <li class="arrow feedback-arrow-left"> <svg width="70" height="47">
                 <use href=./images/svg/sprite.svg#arrow-left></use>
             </svg> </li>
-        <li class="arrow"><img src="./images/svg/files/arrow-right.svg" alt=""></li>  
-    </ul>
+        <li class="arrow feedback-arrow-right"><img src="./images/svg/files/arrow-right.svg" alt=""></li>  
+    </ul> -->
+    
+    
     </div>
 </section> 
 
@@ -373,6 +384,10 @@
         </div>
     </div>
 </footer>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="./js/feedbackSlider.js"></script>
+
 </body>
 
 </html>

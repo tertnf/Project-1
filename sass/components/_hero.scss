@@ -244,29 +244,30 @@ margin-right: 33px;
        
 }
 
-.foto-frame{
+.foto-frame {
     display: block;
     position: absolute;
-        left: 50%;
-        z-index: 1;
-        transform: translateX(-50%);
-            background-image: url(./../images/nat-ugai.png);
-            //   background-color: #0A0909;
-              background-position: right;
-              background-size: contain;
-              background-repeat: no-repeat;
-              position: absolute;
-              top:0px;
-                height: 900px;
-                    width: 1920px;
-                    @media screen and (max-width:767px){
-                        background-image: url(./../images/mobile-hero-img.png);
-                        height: 816px;
-                            width: 811px;
-                           margin-left: auto;
-                           margin-right: auto;
-                        background-position: center;
-                    }
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+    background-image: url(./../images/nat-ugai.png);
+    //   background-color: #0A0909;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    height: 900px;
+    width: 1920px;
+
+    @media screen and (max-width:767px) {
+        background-image: url(./../images/mobile-hero-img.png);
+        height: 816px;
+        width: 811px;
+        margin-left: auto;
+        margin-right: auto;
+        background-position: center;
+           }
 }
 .contacts{
     z-index: 10;
