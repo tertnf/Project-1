@@ -39,20 +39,20 @@
 }
 
 .qualification-list_slider .slick-next:before {
-    content: url(/images/svg/files/arrow-right.svg);
+    content: url(./images/svg/files/arrow-right.svg);
     opacity: 1;
 
     @media screen and (max-width:650px) {
-        content: url(/images/svg/files/arrow-right_mobile.svg);
+        content: url(./images/svg/files/arrow-right_mobile.svg);
     }
 }
 
 .qualification-list_slider .slick-prev:before {
-    content: url(/images/svg/files/arrow-left.svg);
+    content: url(./images/svg/files/arrow-left.svg);
     opacity: 1;
 
     @media screen and (max-width:650px) {
-        content: url(/images/svg/files/arrow-left_mobile.svg);
+        content: url(./images/svg/files/arrow-left_mobile.svg);
     }
 
 }

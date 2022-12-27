@@ -37,7 +37,7 @@ button.slick-arrow.slick-prev::before{
     position: absolute;
    
     content: "";
-    background-image: url(./../../images/svg/arrow-left.svg);
+    background-image: url(./../images/svg/arrow-left.svg);
     opacity: 1;
     display: block;
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@ button.slick-arrow.slick-next::before {
     position: absolute;
 // right: 68px;
     content: "";
-    background-image: url(./../../images/svg/arrow-right.svg);
+    background-image: url(./../images/svg/arrow-right.svg);
 opacity: 1;
     display: block;
     background-repeat: no-repeat;
