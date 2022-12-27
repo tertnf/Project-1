@@ -1,4 +1,7 @@
 .contacts{
+    &-info .header::after{
+        width: 87px;
+    }
     &_social-links{
         margin-bottom: 0;
     }
@@ -87,9 +90,17 @@
 }
 
 @media (max-width: 767px){
-    .contacts-list{
-        margin-top: 39px;
+
+    .contacts-info .header ::after{
+        width: 50%;
     }
+
+    .contacts-list{
+            margin-top: 39px;
+    }
+        
+
+    
 }
 
 
