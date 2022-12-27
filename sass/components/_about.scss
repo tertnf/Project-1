@@ -124,24 +124,16 @@ background-color: #F5E9FB;}
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .about-section .header{
-  
-    // text-align: left;
     margin-left: 65%;
     @media screen and (max-width:767px) {
-        // text-align: center;
-
-        margin-left: auto;
-        margin-right: 358px;
-    }
-   
+        margin-left: 0px;
+    } 
 }
+
 .about-section .header::after{
-    width: 40%;
-    
-@media screen and (max-width:767px) {
-    width: 58%;
-        margin-left: 23px;}
+    width: 74px;
 }
 
 .about-decor{
@@ -150,9 +142,9 @@ background-color: #F5E9FB;}
     right: 25px;
     width: 256px;
 
-@media screen and (max-width:767px) {
-    display: none;
-}
+    @media screen and (max-width:767px) {
+        display: none;
+    }
 }
 
 

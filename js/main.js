@@ -6,36 +6,45 @@ $(".qualification-list_slider").slick({
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    respondTo: 'window'
-    // responsive: [
-    //   {
-    //     breakpoint: 768,
-    //     settings: {
-          
-    //     }
-    //   }
-    // ]
+    responsive: [
+      {
+        breakpoint: 1249,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 650,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
-  
+
 
   //Create modal window for open full img qualification
-  let qualificationImages = document.querySelectorAll('.qualification-img_slider');
   let clickedQualificationImage;
 
   const modalWindow = document.querySelector('.qualification-modal');
   const modalWrap = document.querySelector('.qualification-modal_wrapper');
   const closeModalBtn = document.querySelector('.close-btn');
+  const qualificationListSlider = document.querySelector('.qualification-list_slider');
+  
+  const arrQualificationImages = ['playback.JPG', 'dyploma-mag.JPG', 'dyploma-magistra.JPG', 'child-pscihology.JPG'];
 
-  const openModalWindow = (img) => {
+  const openModalWindow = (id) => {
     modalWindow.classList.remove('modal-close')
     clickedQualificationImage = document.createElement('img');
-    clickedQualificationImage.src = `${img.attributes.src.value}`;
+    clickedQualificationImage.src = `./images/${arrQualificationImages[id]}`;
     clickedQualificationImage.classList.add('qualification-modal_img');
     modalWrap.append(clickedQualificationImage);
   }
 
-  qualificationImages.forEach(item => {
-    item.addEventListener('click', () => openModalWindow(item))
+  qualificationListSlider.addEventListener('click', (event) => {
+    const id = event.target.dataset.id;
+    if (id === undefined) return;
+    openModalWindow(id);
   })
 
   const closeModalWindow = () => {
@@ -47,6 +56,9 @@ $(".qualification-list_slider").slick({
 
   document.addEventListener('keydown', (event) => {
     if(event.code === 'Escape'){
-      closeModalWindow()
+      closeModalWindow();
     }
   })
+
+
+
