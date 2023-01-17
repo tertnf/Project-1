@@ -187,11 +187,12 @@
     </section>
     <section class="appointment-section">
         <div class="container appointment-bg"><h2 class="header appointment-header" id="appointment">Записатися на консультацію</h2>
-            <div class="inputs"> 
-                <input class="input" type="text" id="name" placeholder="Ім'я">
-                <input class="input" type="text" id="tel" placeholder="Телефон">
+            <div class="inputs">
+                <form action="/" method="POST" id="form"><input class="input" type="text" id="name" placeholder="Ім'я">
+                <input class="input" type="text" id="tel" placeholder="Телефон"> <button class="button appointment-button" type="submit">Записатися</button></form> 
+                
             </div>
-            <button class="button appointment-button" type="submit">Записатися</button>
+           
         </div>
     </section>
     
@@ -422,6 +423,7 @@
 <!-- slick.min.js -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/qualification-slider.js"></script>
+<script src="js/appointment-form.js"></script>
 <script type="text/javascript" src="./js/feedbackSlider.js"></script>
 
 </body>
