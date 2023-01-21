@@ -1,5 +1,6 @@
-header .page-header-wrap {
+header .header-wrap {
   background-color: #F5E9FB;
+  padding-top: 57px;
 }
 .header .container{
   
@@ -59,7 +60,7 @@ position: relative;
       margin-right: 20px;  
     }
 }
-.navigation-item{
+.navigation-item a{
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -67,8 +68,12 @@ font-size: 20px;
 line-height: 23px;
 
 color: #181717;
-z-index: 10;
+
   
+}
+
+.navigation-item{
+  z-index: 10;
 }
 
 .navigation-item:hover{

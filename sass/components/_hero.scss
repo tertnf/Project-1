@@ -85,7 +85,9 @@ font-family: 'Montserrat';
             }
 }
 
-
+.hero-section .button{
+margin-bottom: 141px;
+}
 
 .button{
     display: flex;
@@ -97,7 +99,7 @@ font-family: 'Montserrat';
     border: 2px solid #3F0958;
     color: #161616;
     
-    margin-bottom: 141px;
+   
     font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
@@ -284,7 +286,7 @@ margin-right: auto;
 }
 
 h1{margin-bottom: 44px;
-    padding-top: 151px;
+    padding-top: 156px;
     @media screen and (max-width:767px){
         width: 335px;
         text-align: center;

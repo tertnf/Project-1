@@ -172,8 +172,9 @@ img {
   }
 }
 
-header .page-header-wrap {
+header .header-wrap {
   background-color: #F5E9FB;
+  padding-top: 57px;
 }
 
 .header .container {
@@ -223,13 +224,16 @@ header {
   margin-right: 20px;
 }
 
-.navigation-item {
+.navigation-item a {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
   color: #181717;
+}
+
+.navigation-item {
   z-index: 10;
 }
 
@@ -321,6 +325,10 @@ section {
   }
 }
 
+.hero-section .button {
+  margin-bottom: 141px;
+}
+
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -335,7 +343,6 @@ section {
   border-radius: 50px;
   border: 2px solid #3F0958;
   color: #161616;
-  margin-bottom: 141px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -504,7 +511,7 @@ section {
 
 h1 {
   margin-bottom: 44px;
-  padding-top: 151px;
+  padding-top: 156px;
 }
 @media screen and (max-width: 767px) {
   h1 {
@@ -1196,11 +1203,15 @@ body.modal-open {
 }
 
 .appointment-button {
+  display: inline-block;
+  vertical-align: middle;
   width: 260px;
   height: 65px;
   background: linear-gradient(94.38deg, #B33EFB -3.82%, #391FD9 99.49%);
   border-radius: 50px;
   border-style: hidden;
+  margin-left: 150px;
+  margin-right: auto;
 }
 @media screen and (max-width: 767px) {
   .appointment-button {
@@ -1251,6 +1262,8 @@ body.modal-open {
 }
 
 .input {
+  display: inline-block;
+  vertical-align: middle;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 424px;
@@ -1260,6 +1273,8 @@ body.modal-open {
           box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
   border-style: hidden;
+  padding-top: 0px;
+  padding-bottom: 0px;
   padding-left: 45px;
 }
 @media screen and (max-width: 767px) {
@@ -1283,7 +1298,9 @@ body.modal-open {
 
 .inputs {
   display: inline-block;
+  vertical-align: middle;
   margin-right: 150px;
+  margin-bottom: 80px;
 }
 @media screen and (max-width: 767px) {
   .inputs {
@@ -1368,6 +1385,10 @@ body.modal-open {
 
 .appointment-section .header::after {
   display: none;
+}
+
+form {
+  vertical-align: middle;
 }
 
 .qualification-list {
