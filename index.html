@@ -36,7 +36,34 @@
                 <li class="navigation-item"><a class="link" href="#contacts">Контакти</a></li>
             </ul>
         </nav>
-        <button class="burger"> <img src="./images/svg/burger.svg" alt=""></button>
+        <button class="burger menu-open js-open-menu" type="button" aria-controls="mobile-menu" data-menu-button> <img class="menu-open-icon" src="./images/svg/burger.svg" alt=""></button>
+        <button class="menu-close js-close-menu"> <img class="menu-close-icon" src="./images/svg/close.svg" alt=""> </button>
+    </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        
+       
+            <ul class="list mobile-menu-list">
+                <li class="mobile-menu-item">
+                    <a href="#directions" class="mobile-menu-link link current">Напрямки роботи</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#about" class="mobile-menu-link link">Про Мене</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#consultation" class="mobile-menu-link link">Консультації</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#qualification" class="mobile-menu-link link">Кваліфікація</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#feedback" class="mobile-menu-link link">Відгуки</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#contacts" class="mobile-menu-link link">Контакти</a>
+                </li>
+            </ul>
+        
+        
     </div>
     </header>
 <main>
@@ -106,8 +133,8 @@
     
         </div>
        
-    </section>
-    <section class="about-section">
+    </section> 
+     <section class="about-section">
         <div class="container">
             <h2 class="header" id="about">Про мене</h2>
             <div class="about-wrap">
@@ -163,8 +190,8 @@
                 </div>
             
         </div>
-    </section>
-    <section class="consultation-section">
+    </section> 
+     <section class="consultation-section">
         <div class="container">
         <h2 class="header" id="consultation">Консультації</h2>
         <ul class="list consultation-list">
@@ -188,49 +215,22 @@
     <section class="appointment-section">
         <div class="container appointment-bg"><h2 class="header appointment-header" id="appointment">Записатися на консультацію</h2>
             <div class="inputs">
-                <form action="/" method="POST" id="form"><input class="input" type="text" id="name" placeholder="Ім'я">
-                <input class="input" type="text" id="tel" placeholder="Телефон"> <button class="button appointment-button" type="submit">Записатися</button></form> 
+                <form action="/" method="POST" id="form">
+                    <input class="input" type="text" name="name" id="name" placeholder="Ім'я">
+                    <input class="input" type="number" name="tel" id="tel" placeholder="Телефон">
+                    <button class="button appointment-button" type="submit">Записатися</button>
+                </form> 
                 
             </div>
            
         </div>
-    </section>
+    </section> 
     
-    <!-- <section class="qualification-section">
-
-        <div class="container"><h2 class="header" id="qualification">Кваліфікация</h2>
-            <ul class="qualification-list list">
-            
-                <li class="qualification-item"><img class ="qualification-img" src="./images/playback.JPG" alt="">
-                    
-                </li>
-            
-                <li class="qualification-item">
-                    
-                        <img class ="qualification-img" src="./images/dyploma-mag.JPG" alt="">
-                        
-                    
-                </li>
-                <li class="qualification-item">
-                    
-                        <img class ="qualification-img" src="./images/dyploma-magistra.JPG" alt="">
-                        
-                    
-                </li>
-                <li class="qualification-item"><img class ="qualification-img" src="./images/child-pscihology.JPG" alt=""></li>
-            </ul>
-            <ul class="arrows list">
-                <li class="arrow"> <svg width="70" height="47">
-                    <use href=./images/svg/sprite.svg#arrow-left></use>
-                </svg> </li>
-                <li class="arrow"><img src="./images/svg/files/arrow-right.svg" alt=""></li>
-            </ul>
-        </div>
-    </section> -->
-    <section class="qualification-section qualification-section_slider">
+    
+     <section class="qualification-section qualification-section_slider">
     
         <div class="container">
-            <h2 class="header" id="qualification">Кваліфікация</h2>
+            <h2 class="header" id="qualification">Кваліфікація</h2>
     
             <ul class="qualification-list list qualification-list_slider">
                 <li class="qualification-item qualification-item_slider">
@@ -252,23 +252,16 @@
             <div class="qualification-modal modal-close">
                 <img class="close-btn" src="./images/close-btn.png">
                 <div class="qualification-modal_wrapper">
-                    <!-- <img class ="qualification-modal_img" src="./images/child-pscihology.JPG"  alt=""> -->
+                    
                 </div>
             </div>
             </div>
-            </section>
+            </section> 
 
 <section class="feedback-section ">
     <div class="container feedback-bg">
     <h2 class="header" id="feedback">Відгуки</h2>
-    <!-- <div class="slider feedback-items">
-        <ul>
-            <li><img src="./images." alt=""></li>
-            <li><img src="./images/tert-n.jpg" alt=""></li>
-        </ul>
-        
-        
-    </div> -->
+    
     
     <ul class="list feedbacks">
          <li class="feedback-item ">
@@ -333,16 +326,11 @@
             <img class="feedback-design" src="./images/svg/feedback-design.svg" alt="">
         </li> 
     </ul>
-    <!-- <ul class="arrows list">
-        <li class="arrow feedback-arrow-left"> <svg width="70" height="47">
-                <use href=./images/svg/sprite.svg#arrow-left></use>
-            </svg> </li>
-        <li class="arrow feedback-arrow-right"><img src="./images/svg/files/arrow-right.svg" alt=""></li>  
-    </ul> -->
+    
     
     
     </div>
-</section> 
+</section>  
 
     <section class="contacts-info">
         <div class="container">
@@ -373,7 +361,7 @@
 </section>
 
 </main>
-<footer class="page-footer">
+ <footer class="page-footer">
     <div class="container">
         <div class="page-footer_wrapper">
             <a class="page-footer_logo page-footer_link" href=""><img class="page-footer_img" src="./images/logo.png" alt=""></a>
@@ -385,7 +373,7 @@
                 </ul>
                 <ul class="page-footer_items page-footer_items__position">
                     <li class="page-footer_item"><a class="page-footer_link" href="#about">Про Мене</a></li>
-                    <li class="page-footer_item"><a class="page-footer_link" href="#consultation">Консультаціі</a></li>
+                    <li class="page-footer_item"><a class="page-footer_link" href="#consultation">Консультації</a></li>
                     <li class="page-footer_item"><a class="page-footer_link" href="#feedback">Відгуки</a></li>
                 </ul>
                 
@@ -417,15 +405,16 @@
             <a href=""><img src="./images/arrow-up.png" alt=""></a>
         </div>
     </div>
-</footer>
-<script type ='text/javascript' src="js/appointment-form.js"></script>
+</footer> 
+<script defer src="js/mobile-menu.js"></script>
+<script src="js/appointment-form.js"></script>
 <!-- jquery -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
 <!-- slick.min.js -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/qualification-slider.js"></script>
 
-<script type="text/javascript" src="./js/feedbackSlider.js"></script>
+<script type="text/javascript" src="/js/feedbackSlider.js"></script>
 
 </body>
 

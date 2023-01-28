@@ -199,6 +199,7 @@ margin-right: 33px;
 @media screen and (max-width: 767px){
     background-image: none;
 }
+
 }
 
 // .hero-decor{
@@ -224,6 +225,7 @@ margin-right: 33px;
     margin-right: 81px;
     @media screen and (max-width: 767px){
         margin-right: 44px;
+        // margin-right: auto;
         width: 57px;
         height: 45px;
     }
@@ -243,15 +245,23 @@ margin-right: 33px;
         line-height: 23px;
     
         color: #0A0909;
-       
+      @media screen and (max-width:767px) {
+     
+            font-size: 18px;
+            line-height: 21px;
+            /* identical to box height */
+        
+      } 
 }
 
 .foto-frame {
     display: block;
     position: absolute;
-    left: 50%;
+    // left: 50%;
+    left: 0;
+    
     z-index: 1;
-    transform: translateX(-50%);
+    // transform: translateX(-50%);
     background-image: url(./../images/nat-ugai.png);
     //   background-color: #0A0909;
     background-position: right;
@@ -264,15 +274,20 @@ margin-right: 33px;
 
     @media screen and (max-width:767px) {
         background-image: url(./../images/mobile-hero-img.png);
-        height: 816px;
-        width: 811px;
+    height: 689px;
+        width: 375px;
         margin-left: auto;
         margin-right: auto;
         background-position: center;
            }
+
+    // @media screen and (max-width: 375px) {
+    //     width: 375px;
+    // }      
 }
 .contacts{
     z-index: 10;
+    
         
 }
 .hero-content{
@@ -288,7 +303,7 @@ margin-right: auto;
 h1{margin-bottom: 44px;
     padding-top: 156px;
     @media screen and (max-width:767px){
-        width: 335px;
+        max-width: 335px;
         text-align: center;
         padding-top: 45px;
         margin-bottom: 370px;

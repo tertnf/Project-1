@@ -1,6 +1,11 @@
 header .header-wrap {
   background-color: #F5E9FB;
   padding-top: 57px;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 767px){
+    padding-top: 42px;
+  }
 }
 .header .container{
   

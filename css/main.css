@@ -1,4 +1,78 @@
 @charset "UTF-8";
+.menu-container {
+  background-color: #38144A;
+  height: 428px;
+  width: 100vw;
+  padding-top: 79px;
+  padding-left: 43px;
+  position: absolute;
+  left: 0;
+  top: 102px;
+  display: none;
+  font-size: 20px;
+  z-index: 200;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-container.is-open {
+  display: block;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+.menu-container.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.menu-container.is-open .menu-open-icon {
+  display: block;
+}
+.menu-container.is-hidden .menu-close-icon {
+  display: none;
+}
+.menu-container .mobile-menu-link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+  border-bottom: unset;
+}
+
+.menu-open {
+  border: none;
+  background-color: transparent;
+  padding: 0px 0px;
+}
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
+}
+
+.menu-close {
+  border: none;
+  background-color: transparent;
+  margin-left: 0 auto;
+  padding: 0px;
+  cursor: pointer;
+  outline: none;
+}
+@media screen and (min-width: 768px) {
+  .menu-close {
+    display: none;
+  }
+}
+
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 /*Утилиты*/
 .list {
   padding: 0px;
@@ -175,6 +249,17 @@ img {
 header .header-wrap {
   background-color: #F5E9FB;
   padding-top: 57px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 767px) {
+  header .header-wrap {
+    padding-top: 42px;
+  }
 }
 
 .header .container {
@@ -467,14 +552,19 @@ section {
   line-height: 23px;
   color: #0A0909;
 }
+@media screen and (max-width: 767px) {
+  .contacts-item {
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+  }
+}
 
 .foto-frame {
   display: block;
   position: absolute;
-  left: 50%;
+  left: 0;
   z-index: 1;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   background-image: url(./../images/nat-ugai.png);
   background-position: right;
   background-size: contain;
@@ -487,8 +577,8 @@ section {
 @media screen and (max-width: 767px) {
   .foto-frame {
     background-image: url(./../images/mobile-hero-img.png);
-    height: 816px;
-    width: 811px;
+    height: 689px;
+    width: 375px;
     margin-left: auto;
     margin-right: auto;
     background-position: center;
@@ -515,7 +605,7 @@ h1 {
 }
 @media screen and (max-width: 767px) {
   h1 {
-    width: 335px;
+    max-width: 335px;
     text-align: center;
     padding-top: 45px;
     margin-bottom: 370px;
@@ -588,6 +678,13 @@ body.modal-open {
 .directions {
   position: relative;
   max-width: 381px;
+}
+
+@media screen and (max-width: 767px) {
+  .directions-section {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 .container-directions {
@@ -1041,6 +1138,7 @@ body.modal-open {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 2;
 }
 
 .arrow {

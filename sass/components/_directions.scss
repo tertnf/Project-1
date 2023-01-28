@@ -6,6 +6,12 @@
       
    
 }
+.directions-section{
+    @media screen and (max-width: 767px){
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
 .container-directions{
     position: relative;
     display: flex;
