@@ -1851,6 +1851,7 @@ body.modal-open {
 }
 .feedback-section .header {
   color: #ffffff;
+  margin-bottom: 35px;
 }
 
 .feedback {
@@ -1998,7 +1999,13 @@ body.modal-open {
 
 .feedback-section .header::after {
   background-color: #ffffff;
-  width: 93px;
+  width: 65%;
+}
+@media screen and (max-width: 767px) {
+  .feedback-section .header::after {
+    width: 70%;
+    margin-left: 15px;
+  }
 }
 
 .feedback-person {
