@@ -46,11 +46,13 @@
     width: 100%;
     display: flex;
     align-items: center;
+    z-index:2;
 }
 
 .arrow {
  width: 69px;
             height: 47px;
+          
             border-radius: 50px;
     &:focus,
     &:hover {

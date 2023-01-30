@@ -1,5 +1,11 @@
-header .page-header-wrap {
+header .header-wrap {
   background-color: #F5E9FB;
+  padding-top: 57px;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 767px){
+    padding-top: 42px;
+  }
 }
 .header .container{
   
@@ -33,7 +39,7 @@ header .page-header-wrap {
       
 }
 .navigation {
-  @media screen and (max-width: 576px){ 
+  @media screen and (max-width: 767px){ 
     display: none;
   }
   display: flex;
@@ -59,7 +65,7 @@ position: relative;
       margin-right: 20px;  
     }
 }
-.navigation-item{
+.navigation-item a{
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -67,8 +73,12 @@ font-size: 20px;
 line-height: 23px;
 
 color: #181717;
-z-index: 10;
+
   
+}
+
+.navigation-item{
+  z-index: 10;
 }
 
 .navigation-item:hover{

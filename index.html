@@ -36,7 +36,34 @@
                 <li class="navigation-item"><a class="link" href="#contacts">Контакти</a></li>
             </ul>
         </nav>
-        <button class="burger"> <img src="./images/svg/burger.svg" alt=""></button>
+        <button class="burger menu-open js-open-menu" type="button" aria-controls="mobile-menu" data-menu-button> <img class="menu-open-icon" src="./images/svg/burger.svg" alt=""></button>
+        <button class="menu-close js-close-menu"> <img class="menu-close-icon" src="./images/svg/close.svg" alt=""> </button>
+    </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        
+       
+            <ul class="list mobile-menu-list">
+                <li class="mobile-menu-item">
+                    <a href="#directions" class="mobile-menu-link link current">Напрямки роботи</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#about" class="mobile-menu-link link">Про Мене</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#consultation" class="mobile-menu-link link">Консультації</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#qualification" class="mobile-menu-link link">Кваліфікація</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#feedback" class="mobile-menu-link link">Відгуки</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#contacts" class="mobile-menu-link link">Контакти</a>
+                </li>
+            </ul>
+        
+        
     </div>
     </header>
 <main>
@@ -57,18 +84,16 @@
                         </li>
                     </ul>
                     <ul class="social-links list">
-                        <li><a href=""><img src="./images/instagram.png" alt=""></a></li>
-                        <li><a href=""><svg width="40" height="40">
+                        <li><a href="https://www.instagram.com/nata_yg_/"><img src="./images/instagram.png" alt=""></a></li>
+                        <li><a href="https://www.facebook.com/"><svg width="40" height="40">
                             <use href=./images/svg/sprite.svg#facebook></use>
                         </svg></a></li>
-                        <li><a href="https://www.instagram.com/nata_yg_/" target="_blank"><svg width="40" height="40">
+                        <li><a href="https://web.telegram.org" target="_blank"><svg width="40" height="40">
                             <use href=./images/svg/sprite.svg#telegram></use>
                         </svg></a></li>
                     </ul>
                 </div>
-                <div class="foto-frame">
-                    <!-- <img class = "hero-foto" src="./images/ugai.png" alt="Наталія Угай">    -->
-                </div>
+                 <div class="foto-frame"></div> 
             </div>
 
     </hero>
@@ -108,8 +133,8 @@
     
         </div>
        
-    </section>
-    <section class="about-section">
+    </section> 
+     <section class="about-section">
         <div class="container">
             <h2 class="header" id="about">Про мене</h2>
             <div class="about-wrap">
@@ -165,8 +190,8 @@
                 </div>
             
         </div>
-    </section>
-    <section class="consultation-section">
+    </section> 
+     <section class="consultation-section">
         <div class="container">
         <h2 class="header" id="consultation">Консультації</h2>
         <ul class="list consultation-list">
@@ -189,153 +214,123 @@
     </section>
     <section class="appointment-section">
         <div class="container appointment-bg"><h2 class="header appointment-header" id="appointment">Записатися на консультацію</h2>
-            <div class="inputs"> 
-                <input class="input" type="text" id="name" placeholder="Ім'я">
-                <input class="input" type="text" id="tel" placeholder="Телефон">
+            <div class="inputs">
+                <form action="/" method="POST" id="form">
+                    <input class="input" type="text" name="name" id="name" placeholder="Ім'я">
+                    <input class="input" type="number" name="tel" id="tel" placeholder="Телефон">
+                    <button class="button appointment-button" type="submit">Записатися</button>
+                </form> 
+                
             </div>
-            <button class="button appointment-button" type="submit">Записатися</button>
+           
         </div>
-    </section>
+    </section> 
     
-    <!-- <section class="qualification-section">
-
-        <div class="container"><h2 class="header" id="qualification">Кваліфікация</h2>
-            <ul class="qualification-list list">
-            
-                <li class="qualification-item"><img class ="qualification-img" src="./images/playback.JPG" alt="">
-                    
-                </li>
-            
-                <li class="qualification-item">
-                    
-                        <img class ="qualification-img" src="./images/dyploma-mag.JPG" alt="">
-                        
-                    
-                </li>
-                <li class="qualification-item">
-                    
-                        <img class ="qualification-img" src="./images/dyploma-magistra.JPG" alt="">
-                        
-                    
-                </li>
-                <li class="qualification-item"><img class ="qualification-img" src="./images/child-pscihology.JPG" alt=""></li>
-            </ul>
-            <ul class="arrows list">
-                <li class="arrow"> <svg width="70" height="47">
-                    <use href=./images/svg/sprite.svg#arrow-left></use>
-                </svg> </li>
-                <li class="arrow"><img src="./images/svg/files/arrow-right.svg" alt=""></li>
-            </ul>
-        </div>
-    </section> -->
-
-    <section class="qualification-section qualification-section_slider">
-
+    
+     <section class="qualification-section qualification-section_slider">
+    
         <div class="container">
-            <h2 class="header" id="qualification">Кваліфікация</h2>
-
+            <h2 class="header" id="qualification">Кваліфікація</h2>
+    
             <ul class="qualification-list list qualification-list_slider">
                 <li class="qualification-item qualification-item_slider">
-                    <img data-id="0" class ="qualification-img qualification-img_slider" src="./images/playback.JPG" alt="">
+                    <img data-id="0" class="qualification-img qualification-img_slider" src="./images/playback.JPG" alt="">
                 </li>
                 <li class="qualification-item qualification-item_slider">
-                    <img data-id="1" class ="qualification-img qualification-img_slider" src="./images/dyploma-mag.JPG" alt="">
+                    <img data-id="1" class="qualification-img qualification-img_slider" src="./images/dyploma-mag.JPG"
+                        alt="">
                 </li>
                 <li class="qualification-item qualification-item_slider">
-                    <img data-id="2" class ="qualification-img qualification-img_slider" src="./images/dyploma-magistra.JPG" alt="">
+                    <img data-id="2" class="qualification-img qualification-img_slider" src="./images/dyploma-magistra.JPG"
+                        alt="">
                 </li>
                 <li class="qualification-item qualification-item_slider">
-                    <img data-id="3" class ="qualification-img qualification-img_slider" src="./images/child-pscihology.JPG" alt="">
+                    <img data-id="3" class="qualification-img qualification-img_slider" src="./images/child-pscihology.JPG"
+                        alt="">
                 </li>
             </ul>
             <div class="qualification-modal modal-close">
                 <img class="close-btn" src="./images/close-btn.png">
                 <div class="qualification-modal_wrapper">
-                    <!-- <img class ="qualification-modal_img" src="./images/child-pscihology.JPG"  alt=""> -->
+                    
                 </div>
             </div>
-            <!-- <ul class="arrows list">
-                <li class="arrow"> <svg width="70" height="47">
-                    <use href=./images/svg/sprite.svg#arrow-left></use></svg> 
-                </li>
-                <li class="arrow"><img src="./images/svg/files/arrow-right.svg" alt=""></li>
-            </ul> -->
-        </div>
-    </section>
+            </div>
+            </section> 
 
-    <section class="feedback-section">
-        <div class="container feedback-bg">
-        <h2 class="header" id="feedback">Відгуки</h2>
-        <ul class="list feedbacks">
-            <!-- <li class="feedback-item">
-                <div class="feedback">
-                    <div class="feedback-text">
-                        <p>Рекомендую Наталію, як прекрасного педагога в роботі з дітками. Марія с задоволенням ходила на дитячій плейбек, та
-                            кожного разу чекала зустрічі 🤩. Дуже дякую за вашу творчість, індивідуальний підхід до кожної дитини та вашу
-                            турботу та
-                            любов 💞</p>
-                    </div>
-                    <img class="feedback-img" src="./images/anastasia-k.jpg" alt="">
-                    <p class="feedback-person" lang="en">Anastasia Kopytko</p>
+<section class="feedback-section ">
+    <div class="container feedback-bg">
+    <h2 class="header" id="feedback">Відгуки</h2>
+    
+    
+    <ul class="list feedbacks">
+         <li class="feedback-item ">
+            <div class="feedback">
+                <div class="feedback-text">
+                    <p>Рекомендую Наталію, як прекрасного педагога в роботі з дітками. Марія с задоволенням ходила на дитячій плейбек, та
+                        кожного разу чекала зустрічі 🤩. Дуже дякую за вашу творчість, індивідуальний підхід до кожної дитини та вашу
+                        турботу та
+                        любов 💞</p>
+    
+            </div>
+            <img class="feedback-img" src="./images/anastasia-k.jpg" alt="">
+            <p class="feedback-person" lang="ru">Anastasia Kopytko</p>
+            </div>
+            <div class="feedback-design-wrap"><img class="feedback-design" src="./images/svg/feedback-design.svg" alt=""></div>
+        </li>  
+        <li class="feedback-item ">
+            <div class="feedback">
+                <div class="feedback-text">
+                    <p lang="ru">Знаете ли вы на сколько тело чувствительно, отзывчиво, мудро и служит жизни? 
+Познакомившись с Наташей я приобрела новое понимание своей телесности. С телом так хорошо, по доброму и всегда можно положиться, ведь это тоже я! 
+В связи со способностью Наташи чувствовать и понимать тело вскрывается правда которая "лечит", успокаивает и ставит все по своим местам. 
+Жизнеутверждающая, со страстным огоньком внутри, который согревает всех вокруг. 
+Мое тело, Душа и вся я очень тебя благодарю💖🌿</p>
                 </div>
-                <img class="feedback-design" src="/images/feedback-design.png" alt="">
-            </li>  -->
-            <!-- <li class="feedback-item">
-                <div class="feedback">
-                    <div class="feedback-text">
-                        <p lang="ru">Знаете ли вы на сколько тело чувствительно, отзывчиво, мудро и служит жизни? 
-    Познакомившись с Наташей я приобрела новое понимание своей телесности. С телом так хорошо, по доброму и всегда можно положиться, ведь это тоже я! 
-    В связи со способностью Наташи чувствовать и понимать тело вскрывается правда которая "лечит", успокаивает и ставит все по своим местам. 
-    Жизнеутверждающая, со страстным огоньком внутри, который согревает всех вокруг. 
-    Мое тело, Душа и вся я очень тебя благодарю💖🌿</p>
-                    </div>
-                    <img class ="feedback-img" src="./images/vlada-k.jpg" alt="">
-                    <p class="feedback-person" lang="ru">Влада Кацаран</p>
-                    </div>
-                    <img class="feedback-design" src="/images/feedback-design.png" alt="">
-            </li> -->
-            <li class="feedback-item">
-                <div class="feedback">
-                    <div class="feedback-text">
-                        <p>Хочу поділитися враженнями від роботи з Наталією Угай, як з психологом. Ми почали працювати з нею коли я переживала
-                        складний період, усі проблеми загострились через постійний стрес, відчувала, що не можу дозавершити деякі справи.
-                        Наталія допомогла мені справитися з тривогою, страхами, структурувати думки та плани, дістати багато чого, що приховувала моя психіка. Вважаю, що Наталя займається тим, що їй дісно до дущі, вона глибоко
-                        відчуває поле, стан, працює з образами, асоціаціями, підключає творчість та акторські навички. Щиро рекомендую
-                        Наталію Угай, як грамотного та талановитого спеціаліста, який бережно та відповідально працює зі своїми клієнтами.💕
-                        </p>
-                    </div>
-                    <img class="feedback-img" src="./images/tert-n.jpg" alt="">
-                    <p class="feedback-person" lang="en">Nataliia Tertyshna</p>
+                <img class ="feedback-img" src="./images/vlada-k.jpg" alt="">
+                <p class="feedback-person" lang="ru">Влада Кацаран</p>
                 </div>
-                <div class="feedback-design-wrap"><img class="feedback-design" src="/images/feedback-design.svg" alt="">
-            </li>
-            <li class="feedback-item">
-                <div class="feedback">
-                    <div class="feedback-text">
-                        <p>Рекомендую Наталію, як професіонала своєї справи. Наталя у нас у сім'ї працювала нянею для малюка в перші роки життя
-                            та
-                            дошкільника. Дуже легко знайшла контакт з дітьми, вміє завлекти, розташувати, у будь-якій ситуації зберігає спокій і
-                            готова підтримати малюка. До своєї роботи ставитись відповідально, дотримується сімейних правил виховання в сім'ї.
-                            Я спокійно залишала дітей та могла працювати не переживаючи за них.
-                            Ми з чоловіком та дітьми дуже залишилися задоволені працею. Поки що кращої няні ми не зустрічали! Так як знайти
-                            хорошу,
-                            добру, відкриту, таку, що вміє швидко знайти контакт з дітьми няню дуже складно. Дякую за співпрацю.</p>
-                    </div>
-                    <img class="feedback-img" src="./images/olena-k.jpg" alt="">
-                    
-                    <p class="feedback-person">Качура Олена</p>
+                <div class="feedback-design-wrap"><img class="feedback-design" src="./images/svg/feedback-design.svg" alt=""></div>
+        </li> 
+        <li class="feedback-item ">
+            <div class="feedback">
+                <div class="feedback-text">
+                    <p>Хочу поділитися враженнями від роботи з Наталією Угай, як з психологом. Ми почали працювати з нею коли я переживала
+                    складний період, усі проблеми загострились через постійний стрес, відчувала, що не можу дозавершити деякі справи.
+                    Наталія допомогла мені справитися з тривогою, страхами, структурувати думки та плани, дістати багато чого, що приховувала моя психіка. Вважаю, що Наталя займається тим, що їй дісно до дущі, вона глибоко
+                    відчуває поле, стан, працює з образами, асоціаціями, підключає творчість та акторські навички. Щиро рекомендую
+                    Наталію Угай, як грамотного та талановитого спеціаліста, який бережно та відповідально працює зі своїми клієнтами.💕
+                    </p>
                 </div>
-                <div class="feedback-design-wrap"><img class="feedback-design" src="/images/feedback-design.svg" alt=""></div>
-            </li> 
-        </ul>
-        <ul class="arrows list">
-            <li class="arrow" > <svg width="70" height="47">
-                    <use href=./images/svg/sprite.svg#arrow-left></use>
-                </svg> </li>
-            <li class="arrow"><img src="./images/svg/files/arrow-right.svg" alt=""></li>  
-        </ul>
-        </div>
-    </section> 
+                <img class="feedback-img" src="./images/tert-n.jpg" alt="">
+                <p class="feedback-person" lang="en">Nataliia Tertyshna</p>
+            </div>
+            <img class="feedback-design" src="./images/svg/feedback-design.svg" alt="">
+        </li>
+        <li class="feedback-item ">
+            <div class="feedback">
+                <div class="feedback-text">
+                    <p>Рекомендую Наталію, як професіонала своєї справи. Наталя у нас у сім'ї працювала нянею для малюка в перші роки життя
+                        та
+                        дошкільника. Дуже легко знайшла контакт з дітьми, вміє завлекти, розташувати, у будь-якій ситуації зберігає спокій і
+                        готова підтримати малюка. До своєї роботи ставитись відповідально, дотримується сімейних правил виховання в сім'ї.
+                        Я спокійно залишала дітей та могла працювати не переживаючи за них.
+                        Ми з чоловіком та дітьми дуже залишилися задоволені працею. Поки що кращої няні ми не зустрічали! Так як знайти
+                        хорошу,
+                        добру, відкриту, таку, що вміє швидко знайти контакт з дітьми няню дуже складно. Дякую за співпрацю.</p>
+                </div>
+                <img class="feedback-img" src="./images/olena-k.jpg" alt="">
+                
+                <p class="feedback-person">Качура Олена</p>
+            </div>
+            <img class="feedback-design" src="./images/svg/feedback-design.svg" alt="">
+        </li> 
+    </ul>
+    
+    
+    
+    </div>
+</section>  
 
     <section class="contacts-info">
         <div class="container">
@@ -348,11 +343,11 @@
                         <li class="contacts-list_item contacts-list_item__mail"><a class="contacts-list_link" href="mailto:ygai@gmail.com">ygai@gmail.com</a></li>
                     </ul>
                     <ul class="contacts_social-links social-links social-links_media list">
-                        <li><a href=""><img src="./images/instagram.png" alt=""></a></li>
-                        <li><a href=""><svg width="40" height="40">
+                        <li><a href="https://www.instagram.com/nata_yg_/"><img src="./images/instagram.png" alt=""></a></li>
+                        <li><a href="https://www.facebook.com/"><svg width="40" height="40">
                             <use href=./images/svg/sprite.svg#facebook></use>
                         </svg></a></li>
-                        <li><a href="https://www.instagram.com/nata_yg_/" target="_blank"><svg width="40" height="40">
+                        <li><a href="https://web.telegram.org" target="_blank"><svg width="40" height="40">
                             <use href=./images/svg/sprite.svg#telegram></use>
                         </svg></a></li>
                     </ul>
@@ -366,7 +361,7 @@
 </section>
 
 </main>
-<footer class="page-footer">
+ <footer class="page-footer">
     <div class="container">
         <div class="page-footer_wrapper">
             <a class="page-footer_logo page-footer_link" href=""><img class="page-footer_img" src="./images/logo.png" alt=""></a>
@@ -378,7 +373,7 @@
                 </ul>
                 <ul class="page-footer_items page-footer_items__position">
                     <li class="page-footer_item"><a class="page-footer_link" href="#about">Про Мене</a></li>
-                    <li class="page-footer_item"><a class="page-footer_link" href="#consultation">Консультаціі</a></li>
+                    <li class="page-footer_item"><a class="page-footer_link" href="#consultation">Консультації</a></li>
                     <li class="page-footer_item"><a class="page-footer_link" href="#feedback">Відгуки</a></li>
                 </ul>
                 
@@ -389,11 +384,11 @@
                         <li class="page-footer_item"><a class="page-footer_link" href="mailto:ygai@gmail.com">ygai@gmail.com</a></li>
                     </ul>
                     <ul class="page-footer_social-links social-links social-links_media list">
-                        <li><a href=""><img src="./images/instagram.png" alt=""></a></li>
-                        <li><a href=""><svg width="40" height="40">
+                        <li><a href="https://www.instagram.com/nata_yg_/"><img src="./images/instagram.png" alt=""></a></li>
+                        <li><a href="https://www.facebook.com/"><svg width="40" height="40">
                             <use href=./images/svg/sprite.svg#facebook></use>
                         </svg></a></li>
-                        <li><a href="https://www.instagram.com/nata_yg_/" target="_blank"><svg width="40" height="40">
+                        <li><a href="https://web.telegram.org" target="_blank"><svg width="40" height="40">
                             <use href=./images/svg/sprite.svg#telegram></use>
                         </svg></a></li>
                      </ul>
@@ -410,12 +405,16 @@
             <a href=""><img src="./images/arrow-up.png" alt=""></a>
         </div>
     </div>
-</footer>
+</footer> 
+<script defer src="js/mobile-menu.js"></script>
+<script src="js/appointment-form.js"></script>
 <!-- jquery -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
 <!-- slick.min.js -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/qualification-slider.js"></script>
+
+<script type="text/javascript" src="/js/feedbackSlider.js"></script>
 
 </body>
 

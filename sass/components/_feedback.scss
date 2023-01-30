@@ -82,6 +82,7 @@
 
 .feedback-item {
     // flex-basis: calc(100% / 2 - 50px);
+    
     min-width: 900px;
   height: 380px;
     position: relative;
@@ -116,14 +117,15 @@
      
      background-repeat: no-repeat; 
      background-position: left top ; 
+     
 }
 
 .feedbacks{
     display: flex;
-    
+    flex-wrap: nowrap;
     margin-right: -50px;
     margin-bottom: 36px;
-    overflow: hidden;
+    
     
        
     @media screen and (max-width: 767px) {
@@ -211,7 +213,7 @@
 }
 
 // .feedback-section .arrows{
-//     // fill: #AA5CE2;
+//     fill: #AA5CE2;
 //     // fill: red;
 // }
 .feedback-section .header::after{
@@ -250,9 +252,10 @@ font-family: 'Roboto';
     // box-sizing: border-box;
     position: absolute;
     width: 100%;
-  bottom: -222px;
+  bottom: -120px;
 //  width: 100%;
 // height: auto;
+overflow: hidden;
  @media screen and (max-width:767px){
     bottom: 0px;
     overflow: unset;
