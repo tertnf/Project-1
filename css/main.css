@@ -73,6 +73,10 @@
   margin-bottom: 30px;
 }
 
+.is-none {
+  display: none;
+}
+
 /*Утилиты*/
 .list {
   padding: 0px;
