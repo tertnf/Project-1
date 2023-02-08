@@ -23,15 +23,10 @@
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
-.menu-container.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
 .menu-container.is-open .menu-open-icon {
   display: block;
 }
-.menu-container.is-hidden .menu-close-icon {
+.menu-container.is-open.menu-close-icon {
   display: none;
 }
 .menu-container .mobile-menu-link {

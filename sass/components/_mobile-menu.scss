@@ -17,23 +17,31 @@
     &.is-open {
         display: block;
         transform: translateX(0);
+
+        & .menu-open-icon{
+            display: block;
+        }
+        &.menu-close-icon{
+            display: none;
+        }
     }
 
-   &.is-hidden {
-       visibility: hidden;
-       opacity: 0;
-       pointer-events: none;
-   }
 
-    &.is-open .menu-open-icon {
-        display: block;
+//    &.is-hidden {
+//        visibility: hidden;
+//        opacity: 0; 
+//        pointer-events: none;
+//    }
 
-    }
+    // & .is-open.menu-open-icon {
+    //     display: block;
 
-    &.is-hidden .menu-close-icon {
-        display: none;
+    // }
+
+    // & .is-hidden.menu-close-icon {
+    //     display: none;
        
-    }
+    // }
 
     & .mobile-menu-link {
         font-family: 'Roboto';
