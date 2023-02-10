@@ -1,10 +1,15 @@
 .slick-list{overflow: hidden;
-margin-bottom: 36px;}
+margin-bottom: 36px;
+}
 
 .slick-track{
     display: flex;
+    
    
 }
+
+
+
 
 .slider{
     position: relative;
@@ -77,3 +82,14 @@ opacity: 1;
               
 }
 
+// .feedbacks .slick-arrow{
+// position: absolute;
+// bottom: -36px;
+// z-index: 10;
+// &.slick-prev{
+//     left: 0;
+// }
+// &.slick-next{
+//     right: 0;
+// }
+// }

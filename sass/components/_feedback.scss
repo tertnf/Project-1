@@ -83,7 +83,7 @@
 .feedback-item {
     // flex-basis: calc(100% / 2 - 50px);
     
-    min-width: 900px;
+    min-width: 650px;
   height: 380px;
     position: relative;
      margin-right: 50px;
@@ -93,10 +93,19 @@
     // overflow: scroll;
 //     scrollbar-width: thin;
 //    scrollbar-color: #6969dd #C460FF;
-
+@media screen and (max-width:1699px) {
+        // overflow-x: scroll;
+        min-width: 900px;
+        height: auto;
+        margin-right: 20px;
+        margin-left: 20px;
+        
+    }
 @media screen and (max-width:767px){
     // overflow-x: scroll;
-    min-width: 300px;
+    // min-width: 280px;
+    width: 100%;
+    height: auto;
     margin-right: 20px;
     margin-left: 20px;
     scrollbar-width: thin;
@@ -252,7 +261,7 @@ font-family: 'Roboto';
     // box-sizing: border-box;
     position: absolute;
     width: 100%;
-  bottom: -120px;
+  bottom: -95px;
 //  width: 100%;
 // height: auto;
 overflow: hidden;

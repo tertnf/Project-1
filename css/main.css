@@ -2001,14 +2001,23 @@ form {
 }
 
 .feedback-item {
-  min-width: 900px;
+  min-width: 650px;
   height: 380px;
   position: relative;
   margin-right: 50px;
 }
+@media screen and (max-width: 1699px) {
+  .feedback-item {
+    min-width: 900px;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
 @media screen and (max-width: 767px) {
   .feedback-item {
-    min-width: 300px;
+    width: 100%;
+    height: auto;
     margin-right: 20px;
     margin-left: 20px;
     scrollbar-width: thin;
@@ -2152,7 +2161,7 @@ form {
 .feedback-design {
   position: absolute;
   width: 100%;
-  bottom: -120px;
+  bottom: -95px;
   overflow: hidden;
 }
 @media screen and (max-width: 767px) {
