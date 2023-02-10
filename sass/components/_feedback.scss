@@ -1,7 +1,7 @@
 .feedback-section .header{
     color: #ffffff;
+    margin-bottom: 35px;
 }
-
 .feedback{
     
     background-color: #F4F3F3;
@@ -218,7 +218,12 @@
 // }
 .feedback-section .header::after{
     background-color: #ffffff;
-    width: 93px;
+    width: 65%;
+
+    @media screen and (max-width:767px){
+            width: 70%;
+            margin-left: 15px;
+    }
 }
 
 

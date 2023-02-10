@@ -68,6 +68,10 @@
   margin-bottom: 30px;
 }
 
+.is-none {
+  display: none;
+}
+
 /*Утилиты*/
 .list {
   padding: 0px;
@@ -1965,6 +1969,7 @@ form {
 }
 .feedback-section .header {
   color: #ffffff;
+  margin-bottom: 35px;
 }
 
 .feedback {
@@ -2113,7 +2118,13 @@ form {
 
 .feedback-section .header::after {
   background-color: #ffffff;
-  width: 93px;
+  width: 65%;
+}
+@media screen and (max-width: 767px) {
+  .feedback-section .header::after {
+    width: 70%;
+    margin-left: 15px;
+  }
 }
 
 .feedback-person {
