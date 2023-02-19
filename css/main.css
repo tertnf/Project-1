@@ -1976,20 +1976,8 @@ form {
   overflow: hidden;
 }
 
-@media screen and (max-width: 320px) {
-  .slick-active, .slick-current {
-    min-width: 240px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .slick-active, .slick-current {
-    min-width: 300px;
-  }
-}
-@media screen and (max-width: 425px) {
-  .slick-active, .slick-current {
-    min-width: 350px;
-  }
+.slick-active, .slick-current {
+  min-width: 302px;
 }
 
 .feedback {
@@ -2200,33 +2188,13 @@ form {
   position: absolute;
   width: 100%;
   height: auto;
-  bottom: -89px;
+  top: 259px;
   height: auto;
   overflow: hidden;
 }
-@media screen and (max-width: 1400px) {
+@media screen and (min-width: 1400px) {
   .feedback-design {
-    bottom: 0px;
-  }
-}
-@media screen and (min-width: 800px) {
-  .feedback-design {
-    bottom: -12px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .feedback-design {
-    bottom: -22px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .feedback-design {
-    bottom: -35px;
-  }
-}
-@media screen and (min-width: 2560px) {
-  .feedback-design {
-    bottom: -87px;
+    top: 260px;
   }
 }
 
