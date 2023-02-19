@@ -1,5 +1,8 @@
-.slick-list{overflow: hidden;
+.slick-list{
+
 margin-bottom: 36px;
+
+// left: 0px;
 }
 
 .slick-track{
@@ -13,7 +16,7 @@ margin-bottom: 36px;
 
 .slider{
     position: relative;
-    
+ width: 100vw;overflow:hidden;
 }
 .slider .slick-arrow{
     position: absolute;

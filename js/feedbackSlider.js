@@ -2,25 +2,32 @@ $(document).ready(function () {
   $(".feedbacks").slick({
     infinite: true,
     speed: 500,
+    easing: "ease",
     slidesToShow: 2,
-    slidesToScroll: 2,
-    easing: "linear",
-    initialSlide: 1,
+    slidesToScroll: 1,
     responsive: [
-      {
-        breakpoint: 1700,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
       // {
-      //   breakpoint: 650,
+      //   breakpoint: 600,
+      //   settings: {
+      //     slidesToShow: 2,
+
+      //     slidesToScroll: 1,
+      //   },
+      // },
+      // {
+      //   breakpoint: 400,
       //   settings: {
       //     slidesToShow: 1,
       //     slidesToScroll: 1,
       //   },
       // },
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
     ],
   });
 });
