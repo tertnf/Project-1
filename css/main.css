@@ -2084,6 +2084,11 @@ form {
   margin-right: -50px;
   margin-bottom: 36px;
 }
+@media screen and (min-width: 900px) {
+  .feedbacks {
+    margin-bottom: -8px;
+  }
+}
 @media screen and (max-width: 1400px) {
   .feedbacks {
     margin-top: 35px;
@@ -2294,6 +2299,8 @@ button.slick-arrow.slick-prev::before {
   border-radius: 50px;
   background-color: #AA5CE2;
   background-position: center;
+  right: 155px;
+  top: 40px;
 }
 button.slick-arrow.slick-prev::before:focus, button.slick-arrow.slick-prev::before:hover {
   -webkit-box-shadow: 0px 4px 4px rgba(94, 68, 68, 0.25);
@@ -2313,8 +2320,26 @@ button.slick-arrow.slick-next::before {
   border-radius: 50px;
   background-color: #AA5CE2;
   background-position: center;
+  right: 317px;
+  top: 40px;
 }
 button.slick-arrow.slick-next::before:focus, button.slick-arrow.slick-next::before:hover {
   -webkit-box-shadow: 0px 4px 4px rgba(94, 68, 68, 0.25);
           box-shadow: 0px 4px 4px rgba(94, 68, 68, 0.25);
+}
+
+.arrows {
+  position: absolute;
+  top: 610px;
+  right: 0px;
+}
+@media screen and (max-width: 767px) {
+  .arrows {
+    top: 580px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .arrows {
+    position: static;
+  }
 }/*# sourceMappingURL=main.css.map */

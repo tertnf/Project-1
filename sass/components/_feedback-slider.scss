@@ -55,6 +55,8 @@ width: 69px;
     border-radius: 50px;
 background-color: #AA5CE2;
 background-position: center;
+right: 155px;
+top:40px;
     &:focus,
     &:hover {
 
@@ -76,7 +78,8 @@ opacity: 1;
     border-radius: 50px;
     background-color: #AA5CE2;
     background-position: center;
-
+right: 317px;
+top: 40px;
     &:focus,
     &:hover {
 
@@ -88,6 +91,28 @@ opacity: 1;
 // .feedbacks .slick-arrow{
 // position: absolute;
 // bottom: -36px;
+// z-index: 10;
+// &.slick-prev{
+//     left: 0;
+// }
+// &.slick-next{
+//     right: 0;
+// }
+// }
+
+.arrows{
+position: absolute;
+top: 610px;
+right: 0px;
+@media screen and (max-width: 767px) {
+top: 580px;
+}
+@media screen and (min-width: 900px) {
+position: static;
+
+}
+
+}
 // z-index: 10;
 // &.slick-prev{
 //     left: 0;

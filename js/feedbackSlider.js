@@ -1,5 +1,7 @@
 $(document).ready(function () {
   $(".feedbacks").slick({
+    arrows: false,
+    // appendArrows: $(".arrows-feedback-slider"),
     infinite: true,
     speed: 500,
     easing: "ease",
@@ -33,11 +35,11 @@ $(document).ready(function () {
   });
 });
 
-// $(".slider").slick("setPosition");
+// $(".feedbacks").slick("setPosition");
 // $(".data").slick();
-// $(".feedback-arrow-left").click(function (event) {
-//   $(".slider").slick("slickPrev");
-// });
-// $(".feedback-arrow-right").click(function (event) {
-//   $(".slider").slick("slickNext");
-// });
+$(".feedback-arrow-left").click(function (event) {
+  $(".feedbacks").slick("slickPrev");
+});
+$(".feedback-arrow-right").click(function (event) {
+  $(".feedbacks").slick("slickNext");
+});
