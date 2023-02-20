@@ -2,7 +2,6 @@
 
 margin-bottom: 36px;
 
-// left: 0px;
 }
 
 .slick-track{
@@ -66,7 +65,7 @@ top:40px;
 
 button.slick-arrow.slick-next::before {
     position: absolute;
-// right: 68px;
+
     content: "";
     background-image: url(./../images/svg/arrow-right.svg);
 opacity: 1;
@@ -88,17 +87,6 @@ top: 40px;
               
 }
 
-// .feedbacks .slick-arrow{
-// position: absolute;
-// bottom: -36px;
-// z-index: 10;
-// &.slick-prev{
-//     left: 0;
-// }
-// &.slick-next{
-//     right: 0;
-// }
-// }
 
 .arrows{
 position: absolute;
@@ -113,11 +101,3 @@ position: static;
 }
 
 }
-// z-index: 10;
-// &.slick-prev{
-//     left: 0;
-// }
-// &.slick-next{
-//     right: 0;
-// }
-// }

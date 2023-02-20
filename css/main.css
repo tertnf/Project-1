@@ -1974,6 +1974,7 @@ form {
 
 .feedback-section {
   overflow: hidden;
+  position: relative;
 }
 
 .feedback {
