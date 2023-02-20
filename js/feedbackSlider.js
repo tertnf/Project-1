@@ -5,6 +5,7 @@ $(document).ready(function () {
     easing: "ease",
     slidesToShow: 2,
     slidesToScroll: 1,
+    variableWidth: true,
     responsive: [
       // {
       //   breakpoint: 600,
