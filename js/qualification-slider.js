@@ -1,6 +1,7 @@
 //Settings slider-qualification
 
 $(".qualification-list_slider").slick({
+    arrows: false,
     dots: false,
     infinite: true,
     speed: 500,
@@ -21,6 +22,14 @@ $(".qualification-list_slider").slick({
       }
     ]
   });
+
+  $(".qualification-arrow-left").click(function (event) {
+    $(".qualification-list_slider").slick("slickPrev");
+  });
+  $(".qualification-arrow-right").click(function (event) {
+    $(".qualification-list_slider").slick("slickNext");
+  });
+  
 
 
   //Create modal window for open full img qualification
