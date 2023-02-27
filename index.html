@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ua">
+<html lang="ua" >
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
 </head>
 
 <body>
-  <header>
+   <header>
         <div class="container header-wrap">
         <a class="logo" href="./index.html"><img src="./images/logo.png" alt=""></a>
         <ul class="contacts list">
@@ -95,10 +95,11 @@
                     </ul>
                 </div>
                  <div class="foto-frame"></div> 
+                 <div class="hero-foto"></div>
             </div>
 
     </hero>
-    <section class="direction-section">
+     <section class="direction-section">
     
         <div class="container background-directions">
             <h2 class="header" id="directions">Напрямки роботи</h2>
@@ -191,7 +192,7 @@
                 </div>
             
         </div>
-    </section> 
+    </section>   
      <section class="consultation-section">
         <div class="container">
         <h2 class="header" id="consultation">Консультації</h2>
@@ -212,23 +213,24 @@
             </li>
         </ul>
         </div>
-    </section>
+    </section> 
     <section class="appointment-section">
         <div class="container appointment-bg"><h2 class="header appointment-header" id="appointment">Записатися на консультацію</h2>
             <div class="inputs">
-                <form action="/" method="POST" id="form">
-                    <input class="input" type="text" name="name" id="name" placeholder="Ім'я">
-                    <input class="input" type="number" name="tel" id="tel" placeholder="Телефон">
-                    <button class="button appointment-button" type="submit">Записатися</button>
+                <form action="send.php" method="POST" id="form">
+                    <input class="input" name="email" id="email" placeholder="Електронна пошта" type="hidden" value=""> 
+                    <input class="input" type="text" name="subject" id="name" placeholder="Ім'я">
+                    <input class="input" type="number" name="message" id="tel" placeholder="Телефон">
+                    <button class="button appointment-button" name="send" type="submit">Записатися</button>
                 </form> 
                 
             </div>
            
         </div>
-    </section> 
+    </section>  
     
     
-     <section class="qualification-section qualification-section_slider">
+      <section class="qualification-section qualification-section_slider">
     
         <div class="container">
             <h2 class="header" id="qualification">Кваліфікація</h2>
@@ -257,9 +259,9 @@
                 </div>
             </div>
             </div>
-            </section>   
+            </section>    
 
-<section class="feedback-section ">
+ <section class="feedback-section ">
     <div class="container feedback-bg">
     <h2 class="header" id="feedback">Відгуки</h2>
     
@@ -336,9 +338,9 @@
     </ul>
     
     </div>
-</section>  
+</section>   
 
-     <section class="contacts-info">
+      <section class="contacts-info">
         <div class="container">
             <div class="contacts-items">
                 <div class="contacts-item contacts-item_left">
@@ -364,10 +366,10 @@
             </div>
         </div>
 
-</section> 
+</section>  
 
  </main>
- <footer class="page-footer">
+  <footer class="page-footer">
     <div class="container">
         <div class="page-footer_wrapper">
             <a class="page-footer_logo page-footer_link" href=""><img class="page-footer_img" src="./images/logo.png" alt=""></a>
@@ -411,7 +413,7 @@
             <a href=""><img src="./images/arrow-up.png" alt=""></a>
         </div>
     </div>
-</footer>   
+</footer>     
 <script defer src="js/mobile-menu.js"></script>
 <script src="js/appointment-form.js"></script>
 <!-- jquery -->

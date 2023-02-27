@@ -8,7 +8,9 @@ margin-right: -40px;
   display: block; 
 }}
 .consultation-item {
-
+@media screen and (max-width: 320px) {
+margin-right: 0px;
+}
 margin-right: 40px;
 position: relative;
 }
@@ -78,6 +80,13 @@ font-family: 'Roboto';
     
        
 }
+@media screen and (max-width: 320px) {
+
+    font-size: 14px;
+    line-height: 18px;
+
+
+}
 }
 
 
@@ -127,7 +136,11 @@ margin-bottom: 21px;
         width: 235px;
         margin-left: 70px;
     }
-  
+  @media screen and (max-width:320px) {
+      width: 203px;
+      margin-left: 50px;
+    bottom: 3px;
+  }
 }
 .consultation-item{
     &:hover{
@@ -151,3 +164,8 @@ margin-bottom: 21px;
     width: 122px;
 }
  
+.consultation-img{
+    @media screen and (max-width: 320px) {
+        max-width: 264px;
+    }
+}

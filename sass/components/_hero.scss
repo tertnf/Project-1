@@ -309,3 +309,16 @@ h1{margin-bottom: 44px;
         margin-bottom: 370px;
     }
 }
+
+.hero-foto{
+    background-image: url(./../images/mobile/hero-foto-mobile.png);
+    display: block;
+    position: absolute;
+    background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+        top: 0px;
+        height: 357px;
+        width: 332px;
+}

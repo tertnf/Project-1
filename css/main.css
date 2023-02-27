@@ -611,6 +611,18 @@ h1 {
   }
 }
 
+.hero-foto {
+  background-image: url(./../images/mobile/hero-foto-mobile.png);
+  display: block;
+  position: absolute;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 0px;
+  height: 357px;
+  width: 332px;
+}
+
 body {
   background-color: #ffffff;
   color: #2f303a;
@@ -665,6 +677,12 @@ body.modal-open {
   .container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1172,6 +1190,11 @@ body.modal-open {
   margin-right: 40px;
   position: relative;
 }
+@media screen and (max-width: 320px) {
+  .consultation-item {
+    margin-right: 0px;
+  }
+}
 
 .consultation-decor {
   background-image: url("./../images/cons-decor.png");
@@ -1231,6 +1254,12 @@ body.modal-open {
     line-height: 18px;
   }
 }
+@media screen and (max-width: 320px) {
+  .consultation-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
 
 .consultation-list :first-child .consultation-block:before {
   content: "";
@@ -1279,6 +1308,13 @@ body.modal-open {
     margin-left: 70px;
   }
 }
+@media screen and (max-width: 320px) {
+  .consultation-block {
+    width: 203px;
+    margin-left: 50px;
+    bottom: 3px;
+  }
+}
 
 .consultation-item:hover .consultation-block:before {
   width: 70px;
@@ -1297,6 +1333,12 @@ body.modal-open {
 
 .consultation-section .header::after {
   width: 122px;
+}
+
+@media screen and (max-width: 320px) {
+  .consultation-img {
+    max-width: 264px;
+  }
 }
 
 .appointment-button {
@@ -1357,6 +1399,14 @@ body.modal-open {
     padding-bottom: 59px;
   }
 }
+@media screen and (max-width: 320px) {
+  .appointment-bg {
+    background-image: url(./../images/mobile/mobile-appointment-decor.png);
+    width: 264px;
+    height: auto;
+    overflow: hidden;
+  }
+}
 
 .input {
   display: inline-block;
@@ -1379,6 +1429,13 @@ body.modal-open {
     width: 302px;
     height: 55px;
     padding-left: 32px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .input {
+    width: 264px;
+    height: 55px;
+    padding-left: 20px;
   }
 }
 

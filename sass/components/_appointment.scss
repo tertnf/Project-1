@@ -56,6 +56,15 @@
         max-height: 477px;
         background-color: #C483F5;
         padding-bottom: 59px;
+       
+}
+@media screen and (max-width:320px) {
+    background-image: url(./../images/mobile/mobile-appointment-decor.png);
+    width: 264px;
+    height: auto;
+    // background-color: #C483F5;
+    // padding-bottom: 59px;
+overflow: hidden;
 }
 }
 
@@ -77,6 +86,11 @@
                         height: 55px;
                         padding-left: 32px;
                     }
+                                     @media screen and (max-width:320px) {
+                                             width: 264px;
+                                             height: 55px;
+                                             padding-left: 20px;
+                                         }
         }
   
         .inputs :not(:last-child){
@@ -134,3 +148,4 @@
 form {
     vertical-align: middle;
 }
+
