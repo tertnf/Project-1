@@ -1,6 +1,7 @@
 //Settings slider-qualification
 
 $(".qualification-list_slider").slick({
+    arrows: false,
     dots: false,
     infinite: true,
     speed: 500,
@@ -22,6 +23,14 @@ $(".qualification-list_slider").slick({
     ]
   });
 
+  $(".qualification-arrow-left").click(function (event) {
+    $(".qualification-list_slider").slick("slickPrev");
+  });
+  $(".qualification-arrow-right").click(function (event) {
+    $(".qualification-list_slider").slick("slickNext");
+  });
+  
+
 
   //Create modal window for open full img qualification
   let clickedQualificationImage;
@@ -32,14 +41,6 @@ $(".qualification-list_slider").slick({
   const qualificationListSlider = document.querySelector('.qualification-list_slider');
   
   const arrQualificationImages = ['playback.JPG', 'dyploma-mag.JPG', 'dyploma-magistra.JPG', 'child-pscihology.JPG'];
-
-  // const openModalWindow = (id) => {
-  //   modalWindow.classList.remove('modal-close')
-  //   clickedQualificationImage = document.createElement('img');
-  //   clickedQualificationImage.src = `./images/${arrQualificationImages[id]}`;
-  //   clickedQualificationImage.classList.add('qualification-modal_img');
-  //   modalWrap.append(clickedQualificationImage);
-  // }
 
   const openModalWindow = (id) => {
     modalWindow.classList.remove('modal-close')
