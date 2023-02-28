@@ -13,7 +13,7 @@ if(isset ($_POST["send"])){
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
     $mail->Username = "WebsiteOfPsychologist@gmail.com";
-    $mail->Password = 'bytqjjfszdnuoibj';
+    $mail->Password = 'PROJECT1SECRETKEY1';
     $mail->SMTPSecure = 'sll';
     $mail->Port = 465;
     $mail->setFrom('WebsiteOfPsychologist@gmail.com');
