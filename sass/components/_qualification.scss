@@ -1,21 +1,51 @@
-.qualification-list{
-    display: flex;
-    margin-bottom: 50px;
-    
+.qualification{
+    &-section{
+        position: relative;
+    }
+    &-list{
+        display: flex;
+        margin-bottom: 50px;
+    }
+    &-list-list :not(:last-child){
+        margin-right: 32px;
+    }
+    &-img{
+        max-height: 325px;
+        box-shadow:(0px 4px 20px rgba(0, 0, 0, 0.25));
+    }
 }
-.qualification-list :not(:last-child){
-    margin-right: 32px;
-}
-.qualification-img{
-    max-height: 325px;
-    box-shadow:(0px 4px 20px rgba(0, 0, 0, 0.25));
- 
-}
+
 .arrows{
     display: flex;
     justify-content: flex-end;
     margin-right: 68px;
 }
+
+.qualification-arrows{
+    
+    
+   
+    @media screen and (max-width: 900px) {
+        position: absolute;
+        right: 0;
+        top: 410px;
+    }
+    @media screen and (max-width: 767px) {
+        top: 360px;
+    }
+    @media screen and (max-width: 650px) {
+        top: 420px;
+    }
+    @media screen and (max-width: 550px) {
+        top: 400px;
+    }
+    @media screen and (max-width: 450px) {
+        top: 375px;
+    }
+}
+
+
+
 .arrows :not(:last-child){
     margin-right:  35px;
 }
@@ -36,154 +66,6 @@
 
 .qualification-list_slider{
     margin: 0 auto;
-}
-
-.qualification-list_slider .slick-next:before {
-    content: url(./images/svg/files/arrow-right.svg);
-    opacity: 1;
-
-    @media screen and (max-width:650px) {
-        content: url(./images/svg/files/arrow-right_mobile.svg);
-    }
-}
-
-.qualification-list_slider .slick-prev:before {
-    content: url(./images/svg/files/arrow-left.svg);
-    opacity: 1;
-
-    @media screen and (max-width:650px) {
-        content: url(./images/svg/files/arrow-left_mobile.svg);
-    }
-
-}
-
-.qualification-list_slider  .slick-next {
-    right: 10%;
-    top: 365px;
-
-    @media screen and (max-width:1850px) {
-        top: 340px;
-    }
-
-    @media screen and (max-width:1700px) {
-        top: 315px;
-    }
-
-    @media screen and (max-width:1600px) {
-        top: 290px;
-    }
-
-    @media screen and (max-width:1475px) {
-        top: 265px;
-    }
-
-    @media screen and (max-width:1375px) {
-        top: 240px;
-    }
-
-    @media screen and (max-width:1250px) {
-        top: 265px;
-        right: 15%;
-    }
-
-    @media screen and (max-width:1050px) {
-        top: 290px;
-    }
-
-    @media screen and (max-width:975px) {
-        top: 240px;
-        right: 18%;
-    }
-
-    @media screen and (max-width:750px) {
-        right: 20%;
-    }
-
-    @media screen and (max-width:650px) {
-        top: 315px;
-    }
-
-    @media screen and (max-width:550px) {
-        top: 290px;
-    }
-
-    @media screen and (max-width:450px) {
-        top: 265px;
-    }
-
-    @media screen and (max-width:375px) {
-        top: 240px;
-    }
-}
-
-.qualification-list_slider  .slick-prev {
-    left: 82%;
-    top: 365px;
-
-    @media screen and (max-width:1850px) {
-        top: 340px;
-    }
-
-    @media screen and (max-width:1700px) {
-        top: 315px;
-        left: 81%;
-    }
-
-    @media screen and (max-width:1600px) {
-        top: 290px;
-    }
-
-    @media screen and (max-width:1550px) {
-        left: 80%;
-    }
-
-    @media screen and (max-width:1475px) {
-        top: 265px;
-        left: 79%;
-    }
-
-    @media screen and (max-width:1375px) {
-        top: 240px;
-        left: 78%;
-    }
-
-    @media screen and (max-width:1250px) {
-        top: 265px;
-        left: 70%;
-    }
-
-    @media screen and (max-width:1050px) {
-        top: 290px;
-    }
-
-    @media screen and (max-width:975px) {
-        top: 240px;
-        left: 65%;
-    }
-
-    @media screen and (max-width:750px) {
-        left: 61%;
-    }
-
-    @media screen and (max-width:650px) {
-        top: 315px;
-    }
-
-    @media screen and (max-width:550px) {
-        top: 290px;
-        left: 59%;
-    }
-
-    @media screen and (max-width:450px) {
-        top: 265px;
-        left: 53%;
-    }
-
-    @media screen and (max-width:375px) {
-        top: 240px;
-        left: 50%;
-    }
-    
 }
 
 .qualification-img_slider{
@@ -264,7 +146,6 @@
         margin-right: 0px;
         margin-left: 0px;
     }
-    
 }
 
 .modal-close{

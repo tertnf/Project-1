@@ -1,22 +1,16 @@
 .slick-list{
-
-margin-bottom: 36px;
-
+    margin-bottom: 36px;
 }
 
 .slick-track{
     display: flex;
-    
-   
 }
-
-
-
 
 .slider{
     position: relative;
- width: 100vw;overflow:hidden;
+    width: 100vw;overflow:hidden;
 }
+
 .slider .slick-arrow{
     position: absolute;
     top: 0;
@@ -26,49 +20,21 @@ margin-bottom: 36px;
 }
 .slick-prev{
     top:100%;
-  
-right:  0;
-margin-left: 84%;
-
-
+    right:  0;
+    margin-left: 84%;
 }
 
 .slick-next {
     top: 100%;
-   
     right:  167px;
 
 }
 
 button.slick-arrow.slick-prev::before{
     position: absolute;
-   
     content: "";
     background-image: url(./../images/svg/arrow-left.svg);
     opacity: 1;
-    display: block;
-    background-repeat: no-repeat;
-    z-index: 200;
-width: 69px;
-    height: 47px;
-    border-radius: 50px;
-background-color: #AA5CE2;
-background-position: center;
-right: 155px;
-top:40px;
-    &:focus,
-    &:hover {
-
-        box-shadow: 0px 4px 4px rgba(94, 68, 68, 0.25);
-    }
-}
-
-button.slick-arrow.slick-next::before {
-    position: absolute;
-
-    content: "";
-    background-image: url(./../images/svg/arrow-right.svg);
-opacity: 1;
     display: block;
     background-repeat: no-repeat;
     z-index: 200;
@@ -77,27 +43,43 @@ opacity: 1;
     border-radius: 50px;
     background-color: #AA5CE2;
     background-position: center;
-right: 317px;
-top: 40px;
+    right: 155px;
+    top:40px;
     &:focus,
     &:hover {
-
         box-shadow: 0px 4px 4px rgba(94, 68, 68, 0.25);
     }
-              
 }
 
+button.slick-arrow.slick-next::before {
+    position: absolute;
+    content: "";
+    background-image: url(./../images/svg/arrow-right.svg);
+    opacity: 1;
+    display: block;
+    background-repeat: no-repeat;
+    z-index: 200;
+    width: 69px;
+    height: 47px;
+    border-radius: 50px;
+    background-color: #AA5CE2;
+    background-position: center;
+    right: 317px;
+    top: 40px;
+    &:focus,
+    &:hover {
+        box-shadow: 0px 4px 4px rgba(94, 68, 68, 0.25);
+    }           
+}
 
 .arrows{
-position: absolute;
-top: 610px;
-right: 0px;
-@media screen and (max-width: 767px) {
-top: 580px;
-}
-@media screen and (min-width: 900px) {
-position: static;
-
-}
-
+    position: absolute;
+    top: 610px;
+    right: 0px;
+    @media screen and (max-width: 767px) {
+        top: 580px;
+    }
+    @media screen and (min-width: 900px) {
+        position: static;
+    }
 }
