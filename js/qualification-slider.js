@@ -42,14 +42,6 @@ $(".qualification-list_slider").slick({
   
   const arrQualificationImages = ['playback.JPG', 'dyploma-mag.JPG', 'dyploma-magistra.JPG', 'child-pscihology.JPG'];
 
-  // const openModalWindow = (id) => {
-  //   modalWindow.classList.remove('modal-close')
-  //   clickedQualificationImage = document.createElement('img');
-  //   clickedQualificationImage.src = `./images/${arrQualificationImages[id]}`;
-  //   clickedQualificationImage.classList.add('qualification-modal_img');
-  //   modalWrap.append(clickedQualificationImage);
-  // }
-
   const openModalWindow = (id) => {
     modalWindow.classList.remove('modal-close')
     clickedQualificationImage = document.createElement('span');
